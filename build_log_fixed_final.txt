@@ -1,0 +1,165 @@
+> Task :app:buildKotlinToolingMetadata UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsRelease UP-TO-DATE
+> Task :app:generateReleaseResValues UP-TO-DATE
+> Task :app:generateReleaseResources UP-TO-DATE
+> Task :app:injectCrashlyticsMappingFileIdRelease
+> Task :app:processReleaseGoogleServices UP-TO-DATE
+> Task :app:packageReleaseResources
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :app:processReleaseMainManifest UP-TO-DATE
+> Task :app:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseManifestForPackage UP-TO-DATE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :app:parseReleaseLocalResources
+> Task :app:mergeReleaseNativeLibs NO-SOURCE
+> Task :app:stripReleaseDebugSymbols NO-SOURCE
+> Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :app:mergeReleaseArtProfile UP-TO-DATE
+> Task :app:mergeReleaseShaders UP-TO-DATE
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets UP-TO-DATE
+> Task :app:compressReleaseAssets UP-TO-DATE
+> Task :app:extractReleaseVersionControlInfo UP-TO-DATE
+> Task :app:collectReleaseDependencies UP-TO-DATE
+> Task :app:sdkReleaseDependencyData UP-TO-DATE
+> Task :app:validateSigningRelease UP-TO-DATE
+> Task :app:writeReleaseAppMetadata UP-TO-DATE
+> Task :app:writeReleaseSigningConfigVersions UP-TO-DATE
+> Task :app:mergeReleaseResources
+> Task :app:dataBindingGenBaseClassesRelease UP-TO-DATE
+> Task :app:processReleaseResources
+> Task :app:optimizeReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:kaptReleaseKotlin
+> Task :app:compileReleaseKotlin
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/AppDatabase.kt:25:34 The corresponding parameter in the supertype 'Migration' is named 'db'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/AppDatabase.kt:35:34 The corresponding parameter in the supertype 'Migration' is named 'db'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/remote/GoogleSignInHelper.kt:6:47 'GoogleSignInAccount' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/remote/GoogleSignInHelper.kt:8:47 'GoogleSignInOptions' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/remote/GoogleSignInHelper.kt:25:23 'GoogleSignInOptions' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/remote/GoogleSignInHelper.kt:25:51 'GoogleSignInOptions' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/remote/GoogleSignInHelper.kt:38:28 'GoogleSignInAccount' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/remote/GoogleSignInHelper.kt:39:26 'GoogleSignInAccount' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/data/remote/GoogleSignInHelper.kt:52:17 Parameter 'activity' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/GameOverActivity.kt:44:13 Variable 'gameWon' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/JokerRewardActivity.kt:47:13 Variable 'jokerName' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/game/AnswerHandler.kt:33:22 Parameter 'correctAnswer' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/multiplayer/MultiplayerUIManager.kt:37:27 Parameter 'score' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/multiplayer/MultiplayerUIManager.kt:59:9 Parameter 'myName' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/multiplayer/MultiplayerUIManager.kt:60:9 Parameter 'myScore' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/multiplayer/MultiplayerUIManager.kt:61:9 Parameter 'opponentName' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/ui/multiplayer/MultiplayerUIManager.kt:62:9 Parameter 'opponentScore' is never used
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/utils/FeedbackManager.kt:15:61 'VIBRATOR_SERVICE: String' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/utils/NetworkUtils.kt:29:26 'getter for isConnected: Boolean' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/utils/NetworkUtils.kt:47:26 'getter for type: Int' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/utils/NetworkUtils.kt:47:54 'TYPE_WIFI: Int' is deprecated. Deprecated in Java
+w: file:///C:/Users/90538/AndroidStudioProjects/oyun/app/src/main/java/com/example/oyun/utils/NetworkUtils.kt:47:79 'getter for isConnected: Boolean' is deprecated. Deprecated in Java
+
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:hiltAggregateDepsRelease
+> Task :app:hiltJavaCompileRelease
+
+> Task :app:generateReleaseLintVitalReportModel
+Generating lint files for backported methods only (compile API B)
+
+> Task :app:processReleaseJavaRes
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:transformReleaseClassesWithAsm
+> Task :app:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:mergeReleaseJavaResource
+> Task :app:expandReleaseArtProfileWildcards
+> Task :app:minifyReleaseWithR8
+> Task :app:lintVitalReportRelease
+
+> Task :app:lintVitalRelease FAILED
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:15: Error: The color "button_color" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="button_color">#5E92F3</color>
+           ~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:16: Error: The color "answer_button_color" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="answer_button_color">#5E92F3</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:19: Error: The color "level_button_bg_color" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="level_button_bg_color">#FFB59A</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingDefaultResource":
+   If a resource is only defined in folders with qualifiers like -land or -en,
+   and there is no default declaration in the base folder (layout or values
+   etc), then the app will crash if that resource is accessed on a device
+   where the device is in a configuration missing the given qualifier.
+
+   As a special case, drawables do not have to be specified in the base
+   folder; if there is a match in a density folder (such as drawable-mdpi)
+   that image will be used and scaled. Note however that if you  only specify
+   a drawable in a folder like drawable-en-hdpi, the app will crash in
+   non-English locales.
+
+   There may be scenarios where you have a resource, such as a -fr drawable,
+   which is only referenced from some other resource with the same qualifiers
+   (such as a -fr style), which itself has safe fallbacks. However, this still
+   makes it possible for somebody to accidentally reference the drawable and
+   crash, so it is safer to create a default fallback in the base folder.
+   Alternatively, you can suppress the issue by adding
+   tools:ignore="MissingDefaultResource" on the element.
+
+   (This scenario frequently happens with string translations, where you might
+   delete code and the corresponding resources, but forget to delete a
+   translation. There is a dedicated issue id for that scenario, with the id
+   ExtraTranslation.)
+
+3 errors, 0 warnings
+
+
+[Incubating] Problems report is available at: file:///C:/Users/90538/AndroidStudioProjects/oyun/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintVitalRelease'.
+> Lint found fatal errors while assembling a release target.
+  
+  Fix the issues identified by lint, or create a baseline to see only new errors.
+  To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+  ```
+  android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+  ```
+  For more details, see https://developer.android.com/studio/write/lint#snapshot
+  
+  Lint found 3 errors, 0 warnings. First failure:
+  
+  C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:15: Error: The color "button_color" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+      <color name="button_color">#5E92F3</color>
+             ~~~~~~~~~~~~~~~~~~~
+  
+  The full lint text report is located at:
+    C:\Users\90538\AndroidStudioProjects\oyun\app\build\intermediates\lint_vital_intermediate_text_report\release\lintVitalReportRelease\lint-results-release.txt
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 16m 23s
+50 actionable tasks: 22 executed, 28 up-to-date

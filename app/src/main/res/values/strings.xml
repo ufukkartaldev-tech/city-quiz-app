@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">OYUN</string>
+    
+    <!-- Main Menu -->
+    <string name="welcome_user">Hoş geldin, %s!</string>
+    <string name="watch_ad_title">Reklam İzle</string>
+    <string name="watch_ad_message">Reklam izleyerek her jokerden 2\'şer tane kazanabilirsin!</string>
+    <string name="watch_ad_btn">Reklam İzle</string>
+    <string name="cancel">İptal</string>
+    <string name="ad_not_ready">Reklam şu an hazır değil, daha sonra tekrar dene</string>
+    <string name="ad_reward_success">Tebrikler! Her jokerden 2\'şer tane kazandın!</string>
+
+    <!-- Game Activity -->
+    <string name="correct_answer_gain_life">Doğru! +1 Can Kazandın!</string>
+    <string name="wrong_answer">Yanlış Cevap!</string>
+    <string name="joker_not_found_refund">Joker soru bulunamadı! Jokerin iade edildi.</string>
+
+    <!-- Multiplayer -->
+    <string name="room_error">Oda hatası!</string>
+    <string name="waiting_opponent">Rakip bekleniyor...</string>
+    <string name="guest">Misafir</string>
+    <string name="status_correct">DOĞRU! (+ %d)</string>
+    <string name="status_wrong">YANLIŞ!</string>
+    <string name="all_questions_finished">Tüm soruları tamamladınız!\nRakibin bitirmesi bekleniyor...</string>
+    <string name="status_waiting">BEKLENİYOR...</string>
+    <string name="winner_format">%s Kazandı! 🏆</string>
+    <string name="draw">Berabere! 🤝</string>
+    <string name="game_over_title">Oyun Bitti</string>
+    <string name="game_over_message_format">%1$s\n\n%2$s: %3$d\n%4$s: %5$d</string>
+    <string name="return_menu">Menüye Dön</string>
+    <string name="connection_lost">Bağlantı kesildi!</string>
+    <string name="opponent_left">Rakip oyundan ayrıldı.</string>
+
+    <!-- UI Strings -->
+    <string name="welcome_message">Hoş Geldin!</string>
+    <string name="game_modes">Oyun Modları</string>
+    <string name="start_new_game">🎯 Yeni Oyun Başlat</string>
+    <string name="continue_game">▶️ Devam Et</string>
+    <string name="multiplayer">🎮 Çok Oyunculu</string>
+    <string name="win_joker">Joker Kazan</string>
+    <string name="watch_ad">Reklam İzle</string>
+    <string name="daily_tasks">Günlük Görevler</string>
+    <string name="select_level">Seviye Seç</string>
+    <string name="achievements">Başarımlar</string>
+    <string name="high_scores">Yüksek Skorlar</string>
+    <string name="settings_access_desc">Ayarlar</string>
+    
+    <!-- Settings Strings -->
+    <string name="version_format">Versiyon %s</string>
+    <string name="about_title">Hakkında</string>
+    <string name="about_message">🎮 Şehir Bilgi Yarışması\n\nTürkiye\'nin en eğlenceli quiz oyunu!\n\n📱 Özellikler:\n• 10 seviye, yüzlerce soru\n• Multiplayer yarışma modu\n• Başarımlar ve günlük görevler\n• Joker sistemi\n• Liderlik tablosu\n\n📧 İletişim:\ndestek@sehirbilgiyarismasi.com\n\n© 2025 OYUN</string>
+    <string name="feedback_subject">OYUN - Geri Bildirim</string>
+    <string name="email_chooser_title">E-posta Gönder</string>
+    <string name="email_not_found">E-posta uygulaması bulunamadı</string>
+    <string name="profile_info_title">Profil Bilgileri</string>
+    <string name="profile_info_format">👤 Kullanıcı Adı: %1$s\n📧 E-posta: %2$s\n🆔 UID: %3$s</string>
+    <string name="sign_out_title">Çıkış Yap</string>
+    <string name="sign_out_message">Çıkış yapmak istediğinizden emin misiniz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="ok">Tamam</string>
+    <string name="feedback">Geri Bildirim</string>
+    <string name="login_required">Önce giriş yapmalısınız</string>
+    <string name="language_changed">Dil değiştirildi</string>
+    <string name="language_changed_en">Language changed</string>
+    <string name="sound_on">Ses efektleri açıldı</string>
+    <string name="sound_off">Ses efektleri kapatıldı</string>
+    <string name="music_on">Müzik açıldı</string>
+    <string name="music_off">Müzik kapatıldı</string>
+
+    <!-- Game Over -->
+    <string name="game_over_header">OYUN BİTTİ!</string>
+    <string name="total_score">TOPLAM SKOR</string>
+    <string name="correct_count">Doğru</string>
+    <string name="question_count">Soru</string>
+    <string name="level_label">Seviye</string>
+    <string name="try_again">🔄 TEKRAR DENE</string>
+    <string name="main_menu">🏠 Ana Menü</string>
+    <string name="leaderboard">📊 Skor Tablosu</string>
+
+    <!-- Settings Additional -->
+    <string name="settings_title">⚙️ Ayarlar</string>
+    <string name="appearance_settings">🎨 Görünüm</string>
+    <string name="dark_mode">Karanlık Tema</string>
+    <string name="dark_mode_desc">Gözlerinizi korur, batarya tasarrufu sağlar</string>
+    <string name="language_selection">Dil / Language</string>
+    <string name="sound_notification_settings">🔊 Ses ve Bildirimler</string>
+    <string name="sound_effects">Ses Efektleri</string>
+    <string name="music">Müzik</string>
+    <string name="account_settings">👤 Hesap</string>
+    <string name="change_profile">Profil Değiştir</string>
+    <string name="app_info">ℹ️ Uygulama</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+
+    <!-- Auth Screen -->
+    <string name="app_title">Şehir Bilgi Yarışması</string>
+    <string name="app_subtitle">Türkiye\'nin En Eğlenceli Quiz Oyunu</string>
+    <string name="slogan_1">10 Seviye, Yüzlerce Soru</string>
+    <string name="slogan_2">Multiplayer Yarışma Modu</string>
+    <string name="slogan_3">Başarımlar ve Günlük Görevler</string>
+    <string name="login_prompt">Liderlik tablosuna katılın ve ilerlemenizi kaydedin!</string>
+    <string name="google_sign_in">Google ile Giriş Yap</string>
+    <string name="divider_or">veya</string>
+    <string name="guest_login">Misafir Olarak Devam Et</string>
+
+    <!-- Profile Screen -->
+    <string name="select_profile_title">Profil Seç</string>
+    <string name="new_profile_btn">+ YENİ PROFİL</string>
+
+    <!-- Multiplayer Menu -->
+    <string name="create_room_btn">🎮 ODA OLUŞTUR</string>
+    <string name="join_room_btn">🚪 ODAYA KATIL</string>
+    <string name="active_rooms_title">Aktif Odalar</string>
+
+    <!-- Joker Mode -->
+    <string name="joker_mode_title">JOKER KAZAN!</string>
+    <string name="answer_hint">Cevabınızı yazın</string>
+    <string name="submit_answer">CEVAPLA</string>
+
+    <!-- Joker Reward -->
+    <string name="joker_won_title">JOKER KAZANDIN!</string>
+    <string name="continue_btn">DEVAM ET</string>
+
+    <!-- Pause Dialog -->
+    <string name="pause_continue">Devam Et</string>
+    <string name="pause_restart">Yeniden Başlat</string>
+    <string name="pause_exit">Çıkış</string>
+
+    <!-- Multiplayer Game -->
+    <string name="player_you">Sen</string>
+    <string name="player_opponent">Rakip</string>
+    <string name="vs_label">VS</string>
+    <string name="question_progress_format">Soru %1$d/%2$d</string>
+
+    <!-- Information Screens -->
+    <string name="high_scores_title">📊 Yüksek Skorlar</string>
+    <string name="achievements_title">🏆 Başarımlar</string>
+    <string name="daily_tasks_title">📋 Günlük Görevler</string>
+    <string name="privacy_policy_title">Gizlilik Politikası</string>
+    <string name="policy_loading">Gizlilik politikası yükleniyor...</string>
+</resources>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_neon_gradient"
+    tools:context=".ui.MainActivity">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent">
+
+            <!-- Welcome Text -->
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_message"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start" />
+
+            <!-- Settings Icon -->
+            <ImageButton
+                android:id="@+id/settingsButtonAnchor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_preferences"
+                android:tint="@android:color/white"
+                android:contentDescription="@string/settings_access_desc" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Primary Actions Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/glass_white"
+                app:strokeColor="@color/glass_stroke"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_modes"
+                        android:textColor="@color/text_primary_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Start Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/startButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:text="@string/start_new_game"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/bg_button_primary"
+                        app:backgroundTint="@null"
+                        app:icon="@android:drawable/ic_media_play"
+                        app:iconGravity="textStart"
+                        app:iconTint="@android:color/white"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Continue Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/continueButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:text="@string/continue_game"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/neon_blue"
+                        android:background="@drawable/bg_button_secondary"
+                        app:backgroundTint="@null"
+                        app:icon="@android:drawable/ic_media_play"
+                        app:iconGravity="textStart"
+                        app:iconTint="@color/neon_blue"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Multiplayer Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/multiplayerButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:text="@string/multiplayer"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/neon_purple"
+                        app:cornerRadius="12dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Grid Layout for Other Options -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:alignmentMode="alignBounds"
+                android:columnOrderPreserved="false"
+                android:useDefaultMargins="true">
+
+                <!-- Joker Mode Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/jokerModeCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="@color/glass_white"
+                    app:strokeColor="@color/glass_stroke"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🃏"
+                            android:textSize="32sp"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/jokerModeButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/win_joker"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Watch Ad Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/watchAdCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="@color/glass_white"
+                    app:strokeColor="@color/glass_stroke"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📺"
+                            android:textSize="32sp"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/watchAdButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/watch_ad"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Daily Tasks Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/dailyTasksCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="@color/glass_white"
+                    app:strokeColor="@color/glass_stroke"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📋"
+                            android:textSize="32sp"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/dailyTasksButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/daily_tasks"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Level Select Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/levelSelectCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="@color/glass_white"
+                    app:strokeColor="@color/glass_stroke"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🎯"
+                            android:textSize="32sp"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/levelSelectButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_level"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Achievements Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/achievementsCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="@color/glass_white"
+                    app:strokeColor="@color/glass_stroke"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🏆"
+                            android:textSize="32sp"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/achievementsButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/achievements"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- High Scores Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/highScoresCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="@color/glass_white"
+                    app:strokeColor="@color/glass_stroke"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- NEW: Friends Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/friendsCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="@color/glass_white"
+                    app:strokeColor="@color/glass_stroke"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👥"
+                            android:textSize="32sp"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/friendsButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arkadaşlar"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

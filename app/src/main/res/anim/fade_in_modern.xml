@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fade In with Slide Up Animation -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:duration="600">
+    
+    <!-- Fade in -->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+    
+    <!-- Slide up -->
+    <translate
+        android:fromYDelta="30%"
+        android:toYDelta="0%" />
+    
+    <!-- Scale up slightly -->
+    <scale
+        android:fromXScale="0.95"
+        android:fromYScale="0.95"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%" />
+</set>

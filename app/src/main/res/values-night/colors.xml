@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================ -->
+    <!-- DARK THEME SPECIFIC COLORS -->
+    <!-- ============================================ -->
+    
+    <!-- Bu dosya sadece dark mode'da override edilen renkleri içerir -->
+    <!-- Diğer renkler values/colors.xml'den gelir -->
+    
+    <!-- Background & Surface (Dark mode için özel) -->
+    <color name="background_color">#0D1117</color>
+    <color name="text_color">#E3E2E6</color>
+    
+    <!-- Button Colors (Dark mode için uyarlanmış) -->
+    <color name="button_color">#5E92F3</color>
+    <color name="answer_button_color">#5E92F3</color>
+    
+    <!-- Level Button (Dark mode) -->
+    <color name="level_button_bg_color">#FFB59A</color>
+    
+    <!-- Answer States (Dark mode için daha parlak) -->
+    <color name="answer_default">#5E92F3</color>
+    <color name="answer_correct">#81C784</color>
+    <color name="answer_wrong">#EF5350</color>
+    <color name="answer_selected">#FFB59A</color>
+</resources>

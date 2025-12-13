@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_neon_gradient"
+    tools:context=".ui.AuthActivity">
+
+    <!-- Logo/Icon Area -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:background="@drawable/bg_glass_card"
+        android:padding="16dp" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_title"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/neon_blue"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appLogo" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_subtitle"
+        android:textColor="@color/neon_pink"
+        android:textSize="16sp"
+        android:shadowColor="@color/neon_pink"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText" />
+
+    <!-- Card Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/authCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/glass_white"
+        app:strokeColor="@color/glass_stroke"
+        app:strokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitleText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center">
+
+            <!-- Info Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_prompt"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Google Sign In Button (Custom) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/googleSignInButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/google_sign_in"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/neon_blue"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_search"
+                app:iconGravity="textStart"
+                app:iconPadding="12dp"
+                app:iconTint="@android:color/white"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp"
+                android:stateListAnimator="@null" />
+
+            <!-- Divider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/glass_stroke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divider_or"
+                    android:textColor="@color/text_secondary_dark"
+                    android:textSize="14sp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/glass_stroke" />
+            </LinearLayout>
+
+            <!-- Skip Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/skipButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/guest_login"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:strokeColor="@color/neon_pink"
+                app:strokeWidth="1dp"
+                app:cornerRadius="16dp"
+                app:rippleColor="@color/neon_pink" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Features List -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authCard">
+
+        <!-- Feature 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="✓"
+                android:textColor="@color/neon_green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slogan_1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Feature 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="✓"
+                android:textColor="@color/neon_green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slogan_2"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Feature 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="✓"
+                android:textColor="@color/neon_green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slogan_3"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

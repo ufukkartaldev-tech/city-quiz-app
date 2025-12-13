@@ -1,0 +1,115 @@
+# ============================================
+# ANDROID STUDIO & GRADLE
+# ============================================
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# ============================================
+# HASSAS BİLGİLER (GİZLİ TUTULACAK!)
+# ============================================
+
+# Google Services (Firebase API keys)
+google-services.json
+**/google-services.json
+
+# Keystore dosyaları (Uygulama imzalama)
+keystore.properties
+*.jks
+*.keystore
+*.p12
+
+# API Keys
+api_keys.xml
+secrets.xml
+**/secrets.properties
+
+# ============================================
+# ANDROID BUILD OUTPUTS
+# ============================================
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+
+# ============================================
+# OS JUNK FILES
+# ============================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ============================================
+# BACKUP FILES
+# ============================================
+*~
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# ============================================
+# RELEASE FILES (Opsiyonel - Eğer release klasörü varsa)
+# ============================================
+/app/release/
+/app/debug/
+
+# ============================================
+# GENERATED FILES
+# ============================================
+/app/build/
+/build/
+*.hprof
+
+# ============================================
+# NAVIGATION EDITOR
+# ============================================
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+
+# ============================================
+# LINT
+# ============================================
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint-results*.xml
+lint-results*.html
+
+# ============================================
+# NDK
+# ============================================
+obj/
+.externalNativeBuild/
+
+# ============================================
+# MISC
+# ============================================
+.cxx/
+captures/
+freeline/
+freeline_project_description.json
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md

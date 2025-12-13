@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_neon_gradient"
+    tools:context=".ui.ProfileSelectionActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_profile_title"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:shadowColor="@color/neon_purple"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profilesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintBottom_toTopOf="@id/newProfileNameEditText" />
+
+    <EditText
+        android:id="@+id/newProfileNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Yeni Profil Adı"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/text_secondary"
+        android:backgroundTint="@color/neon_purple"
+        app:layout_constraintBottom_toTopOf="@id/addProfileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addProfileButton"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/new_profile_btn"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/neon_pink"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconGravity="textStart"
+        app:iconTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

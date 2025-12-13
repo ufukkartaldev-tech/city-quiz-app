@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">GAME</string>
+    
+    <!-- Main Menu -->
+    <string name="welcome_user">Welcome, %s!</string>
+    <string name="watch_ad_title">Watch Ad</string>
+    <string name="watch_ad_message">Watch an ad to earn 2 of each joker!</string>
+    <string name="watch_ad_btn">Watch Ad</string>
+    <string name="cancel">Cancel</string>
+    <string name="ad_not_ready">Ad is not ready, please try again later</string>
+    <string name="ad_reward_success">Congratulations! You earned 2 of each joker!</string>
+
+    <!-- Game Activity -->
+    <string name="correct_answer_gain_life">Correct! +1 Life Gained!</string>
+    <string name="wrong_answer">Wrong Answer!</string>
+    <string name="joker_not_found_refund">Joker question not found! Your joker has been refunded.</string>
+
+    <!-- Multiplayer -->
+    <string name="room_error">Room error!</string>
+    <string name="waiting_opponent">Waiting for opponent...</string>
+    <string name="guest">Guest</string>
+    <string name="status_correct">CORRECT! (+ %d)</string>
+    <string name="status_wrong">WRONG!</string>
+    <string name="all_questions_finished">You completed all questions!\nWaiting for opponent to finish...</string>
+    <string name="status_waiting">WAITING...</string>
+    <string name="winner_format">%s Won! 🏆</string>
+    <string name="draw">Draw! 🤝</string>
+    <string name="game_over_title">Game Over</string>
+    <string name="game_over_message_format">%1$s\n\n%2$s: %3$d\n%4$s: %5$d</string>
+    <string name="return_menu">Return to Menu</string>
+    <string name="connection_lost">Connection lost!</string>
+    <string name="opponent_left">Opponent left the game.</string>
+</resources>

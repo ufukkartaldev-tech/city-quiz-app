@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================ -->
+    <!-- LINEAR APP STYLE PALETTE (Dark & Neon)       -->
+    <!-- ============================================ -->
+
+    <!-- Base Backgrounds -->
+    <color name="linear_background">#0B0E14</color>
+    <color name="linear_background_secondary">#151921</color>
+    
+    <!-- Glass Effects -->
+    <color name="glass_white">#1AFFFFFF</color>
+    <color name="glass_white_strong">#26FFFFFF</color>
+    <color name="glass_stroke">#33FFFFFF</color>
+    <color name="glass_stroke_highlight">#66FFFFFF</color>
+    <color name="glass_dark">#80000000</color>
+
+    <!-- Neon Accents -->
+    <color name="neon_blue">#00E5FF</color>
+    <color name="neon_blue_start">#00C6FF</color>
+    <color name="neon_blue_end">#0072FF</color>
+    
+    <color name="neon_purple">#BC13FE</color>
+    <color name="neon_purple_start">#D500F9</color>
+    <color name="neon_purple_end">#651FFF</color>
+
+    <color name="neon_pink">#FF2E93</color>
+    <color name="neon_pink_start">#FF4081</color>
+    <color name="neon_pink_end">#C51162</color>
+
+    <color name="neon_green">#00E676</color>
+    <color name="neon_gold">#FFD600</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B3B8</color>
+    <color name="text_tertiary">#6E7681</color>
+    <color name="text_accent">#00E5FF</color>
+
+    <!-- Semantic Colors -->
+    <color name="success">#00E676</color>
+    <color name="error">#FF1744</color>
+    <color name="warning">#FFC400</color>
+    <color name="info">#2979FF</color>
+
+    <!-- MD3 Compatibility (Mapped to Linear Style) -->
+    <!-- MD3 Light Theme Colors (Complete) -->
+    <color name="md_theme_light_primary">#00E5FF</color>
+    <color name="md_theme_light_onPrimary">#000000</color>
+    <color name="md_theme_light_primaryContainer">#003E5C</color>
+    <color name="md_theme_light_onPrimaryContainer">#C6F5FF</color>
+    <color name="md_theme_light_secondary">#BC13FE</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#F3E5F5</color>
+    <color name="md_theme_light_onSecondaryContainer">#4A148C</color>
+    <color name="md_theme_light_tertiary">#FF2E93</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#FCE4EC</color>
+    <color name="md_theme_light_onTertiaryContainer">#880E4F</color>
+    <color name="md_theme_light_error">#FF1744</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_errorContainer">#FFEBEE</color>
+    <color name="md_theme_light_onErrorContainer">#B71C1C</color>
+    <color name="md_theme_light_background">#0B0E14</color>
+    <color name="md_theme_light_onBackground">#FFFFFF</color>
+    <color name="md_theme_light_surface">#151921</color>
+    <color name="md_theme_light_onSurface">#FFFFFF</color>
+    <color name="md_theme_light_surfaceVariant">#26FFFFFF</color>
+    <color name="md_theme_light_onSurfaceVariant">#B0B3B8</color>
+    <color name="md_theme_light_outline">#33FFFFFF</color>
+    <color name="md_theme_light_inverseOnSurface">#151921</color>
+    <color name="md_theme_light_inverseSurface">#FFFFFF</color>
+    <color name="md_theme_light_inversePrimary">#0072FF</color>
+    <color name="md_theme_light_shadow">#000000</color>
+
+    <!-- MD3 Dark Theme Colors (Complete) -->
+    <color name="md_theme_dark_primary">#00E5FF</color>
+    <color name="md_theme_dark_onPrimary">#000000</color>
+    <color name="md_theme_dark_primaryContainer">#003E5C</color>
+    <color name="md_theme_dark_onPrimaryContainer">#C6F5FF</color>
+    <color name="md_theme_dark_secondary">#BC13FE</color>
+    <color name="md_theme_dark_onSecondary">#FFFFFF</color>
+    <color name="md_theme_dark_secondaryContainer">#4A148C</color>
+    <color name="md_theme_dark_onSecondaryContainer">#F3E5F5</color>
+    <color name="md_theme_dark_tertiary">#FF2E93</color>
+    <color name="md_theme_dark_onTertiary">#FFFFFF</color>
+    <color name="md_theme_dark_tertiaryContainer">#880E4F</color>
+    <color name="md_theme_dark_onTertiaryContainer">#FCE4EC</color>
+    <color name="md_theme_dark_error">#FF1744</color>
+    <color name="md_theme_dark_onError">#000000</color>
+    <color name="md_theme_dark_errorContainer">#B71C1C</color>
+    <color name="md_theme_dark_onErrorContainer">#FFEBEE</color>
+    <color name="md_theme_dark_background">#0B0E14</color>
+    <color name="md_theme_dark_onBackground">#FFFFFF</color>
+    <color name="md_theme_dark_surface">#151921</color>
+    <color name="md_theme_dark_onSurface">#FFFFFF</color>
+    <color name="md_theme_dark_surfaceVariant">#26FFFFFF</color>
+    <color name="md_theme_dark_onSurfaceVariant">#B0B3B8</color>
+    <color name="md_theme_dark_outline">#33FFFFFF</color>
+    <color name="md_theme_dark_inverseOnSurface">#151921</color>
+    <color name="md_theme_dark_inverseSurface">#FFFFFF</color>
+    <color name="md_theme_dark_inversePrimary">#0072FF</color>
+    <color name="md_theme_dark_shadow">#000000</color>
+
+    <!-- Legacy Colors (Maintained) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">@color/linear_background</color>
+    <color name="text_color">@color/text_primary</color>
+
+    <!-- Legacy Mappings for Backward Compatibility -->
+    <color name="ripple_light">@color/glass_stroke_highlight</color>
+    <color name="ripple_color">@color/glass_stroke_highlight</color>
+    <color name="success_dark">@color/success</color>
+    
+    <color name="gradient_primary_start">@color/neon_blue_start</color>
+    <color name="gradient_primary_end">@color/neon_blue_end</color>
+    <color name="gradient_secondary_start">@color/neon_purple_start</color>
+    <color name="gradient_secondary_end">@color/neon_purple_end</color>
+    <color name="gradient_success_start">@color/neon_green</color>
+    <color name="gradient_success_end">@color/success</color>
+
+    <color name="text_primary_dark">@color/text_primary</color>
+    <color name="text_secondary_dark">@color/text_secondary</color>
+
+    <!-- Game Specific -->
+    <color name="answer_default">@color/glass_white</color>
+    <color name="answer_correct">@color/success</color>
+    <color name="answer_wrong">@color/error</color>
+    <color name="answer_selected">@color/neon_blue</color>
+
+    <!-- Level Colors -->
+    <color name="level_1_color">@color/neon_blue</color>
+    <color name="level_2_color">@color/neon_purple</color>
+    <color name="level_3_color">@color/neon_pink</color>
+    <color name="level_4_color">@color/neon_green</color>
+    <color name="level_5_color">@color/warning</color>
+    <color name="level_6_color">#FF5722</color>
+    <color name="level_7_color">#00BCD4</color>
+    <color name="level_8_color">#FF9800</color>
+    <color name="level_9_color">#795548</color>
+    <color name="level_10_color">#607D8B</color>
+    <color name="default_level_color">@color/text_tertiary</color>
+
+    <!-- Joker Colors -->
+    <color name="joker_fifty_fifty">@color/neon_blue</color>
+    <color name="joker_skip">@color/warning</color>
+    <color name="joker_gain_life">@color/success</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_light">@color/glass_white</color>
+    <color name="overlay_medium">#66000000</color>
+    <color name="overlay_dark">#99000000</color>
+
+    <!-- Missing Colors Fix -->
+    <color name="button_color">#5E92F3</color>
+    <color name="answer_button_color">#5E92F3</color>
+    <color name="level_button_bg_color">#FFB59A</color>
+</resources>

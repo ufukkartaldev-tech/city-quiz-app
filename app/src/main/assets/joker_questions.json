@@ -1,0 +1,578 @@
+[
+  {
+    "city": "Ankara",
+    "joker_questions": [
+      {
+        "questionText": "Türkiye'nin başkenti ______'dır.",
+        "correctAnswers": ["Ankara"]
+      }
+    ]
+  },
+  {
+    "city": "İstanbul",
+    "joker_questions": [
+      {
+        "questionText": "Boğaziçi ve Fatih Sultan Mehmet Köprüleri hangi şehrimizdedir? ______",
+        "correctAnswers": ["İstanbul"]
+      }
+    ]
+  },
+  {
+    "city": "İzmir",
+    "joker_questions": [
+      {
+        "questionText": "Saat Kulesi ve Alsancak'ı ile ünlü Ege şehrimiz ______'dır.",
+        "correctAnswers": ["İzmir"]
+      }
+    ]
+  },
+  {
+    "city": "Paris",
+    "joker_questions": [
+      {
+        "questionText": "Eyfel Kulesi'nin bulunduğu şehir ______'dır.",
+        "correctAnswers": ["Paris"]
+      }
+    ]
+  },
+  {
+    "city": "Londra",
+    "joker_questions": [
+      {
+        "questionText": "Big Ben saat kulesi hangi şehirdedir? ______",
+        "correctAnswers": ["Londra"]
+      }
+    ]
+  },
+  {
+    "city": "Roma",
+    "joker_questions": [
+      {
+        "questionText": "Kolezyum (Colosseum) hangi İtalyan şehrindedir? ______",
+        "correctAnswers": ["Roma"]
+      }
+    ]
+  },
+  {
+    "city": "New York",
+    "joker_questions": [
+      {
+        "questionText": "Özgürlük Heykeli (Statue of Liberty) hangi şehirdedir? ______",
+        "correctAnswers": ["New York"]
+      }
+    ]
+  },
+  {
+    "city": "Tokyo",
+    "joker_questions": [
+      {
+        "questionText": "Japonya'nın başkenti ______'dır.",
+        "correctAnswers": ["Tokyo"]
+      }
+    ]
+  },
+  {
+    "city": "Pekin",
+    "joker_questions": [
+      {
+        "questionText": "Çin Seddi'ne ev sahipliği yapan ülkenin başkenti ______'dır.",
+        "correctAnswers": ["Pekin"]
+      }
+    ]
+  },
+  {
+    "city": "Moskova",
+    "joker_questions": [
+      {
+        "questionText": "Rusya'nın başkenti ______'dır.",
+        "correctAnswers": ["Moskova"]
+      }
+    ]
+  },
+  {
+    "city": "Berlin",
+    "joker_questions": [
+      {
+        "questionText": "Almanya'nın başkenti ______'dır.",
+        "correctAnswers": ["Berlin"]
+      }
+    ]
+  },
+  {
+    "city": "Kahire",
+    "joker_questions": [
+      {
+        "questionText": "Mısır Piramitleri'nin bulunduğu şehir ______'dır.",
+        "correctAnswers": ["Kahire"]
+      }
+    ]
+  },
+  {
+    "city": "Sydney",
+    "joker_questions": [
+      {
+        "questionText": "Opera Binası (Sydney Opera House) hangi Avustralya şehrindedir? ______",
+        "correctAnswers": ["Sydney"]
+      }
+    ]
+  },
+  {
+    "city": "Rio de Janeiro",
+    "joker_questions": [
+      {
+        "questionText": "Kurtarıcı İsa Heykeli (Christ the Redeemer) hangi Brezilya şehrindedir? ______",
+        "correctAnswers": ["Rio de Janeiro"]
+      }
+    ]
+  },
+  {
+    "city": "Amsterdam",
+    "joker_questions": [
+      {
+        "questionText": "Kanalları ve yüzen evleri ile ünlü Hollanda şehri ______'dır.",
+        "correctAnswers": ["Amsterdam"]
+      }
+    ]
+  },
+  {
+    "city": "Venedik",
+    "joker_questions": [
+      {
+        "questionText": "Gondol denilen teknelerle ünlü kanallar şehri ______'dır.",
+        "correctAnswers": ["Venedik"]
+      }
+    ]
+  },
+  {
+    "city": "Dubai",
+    "joker_questions": [
+      {
+        "questionText": "Dünyanın en yüksek binası Burj Khalifa hangi şehirdedir? ______",
+        "correctAnswers": ["Dubai"]
+      }
+    ]
+  },
+  {
+    "city": "Barcelona",
+    "joker_questions": [
+      {
+        "questionText": "Sagrada Familia Kilisesi hangi İspanya şehrindedir? ______",
+        "correctAnswers": ["Barcelona"]
+      }
+    ]
+  },
+  {
+    "city": "Madrid",
+    "joker_questions": [
+      {
+        "questionText": "İspanya'nın başkenti ______'dır.",
+        "correctAnswers": ["Madrid"]
+      }
+    ]
+  },
+  {
+    "city": "Lizbon",
+    "joker_questions": [
+      {
+        "questionText": "Portekiz'in başkenti ______'dır.",
+        "correctAnswers": ["Lizbon"]
+      }
+    ]
+  },
+  {
+    "city": "Prag",
+    "joker_questions": [
+      {
+        "questionText": "Astronomik Saat (Prague Astronomical Clock) hangi Çekya şehrindedir? ______",
+        "correctAnswers": ["Prag"]
+      }
+    ]
+  },
+  {
+    "city": "Viyana",
+    "joker_questions": [
+      {
+        "questionText": "Avusturya'nın başkenti ______'dır.",
+        "correctAnswers": ["Viyana"]
+      }
+    ]
+  },
+  {
+    "city": "Brüksel",
+    "joker_questions": [
+      {
+        "questionText": "Avrupa Birliği'nin merkezi ve çikolatasıyla ünlü Belçika'nın başkenti ______'dır.",
+        "correctAnswers": ["Brüksel"]
+      }
+    ]
+  },
+  {
+    "city": "Stockholm",
+    "joker_questions": [
+      {
+        "questionText": "İsveç'in başkenti ______'dır.",
+        "correctAnswers": ["Stockholm"]
+      }
+    ]
+  },
+  {
+    "city": "Oslo",
+    "joker_questions": [
+      {
+        "questionText": "Norveç'in başkenti ______'dır.",
+        "correctAnswers": ["Oslo"]
+      }
+    ]
+  },
+  {
+    "city": "Kopenhag",
+    "joker_questions": [
+      {
+        "questionText": "Küçük Deniz Kızı Heykeli'nin bulunduğu Danimarka'nın başkenti ______'dır.",
+        "correctAnswers": ["Kopenhag"]
+      }
+    ]
+  },
+  {
+    "city": "Atina",
+    "joker_questions": [
+      {
+        "questionText": "Akropolis ve Parthenon Tapınağı ile ünlü Yunanistan'ın başkenti ______'dır.",
+        "correctAnswers": ["Atina"]
+      }
+    ]
+  },
+  {
+    "city": "Budapeşte",
+    "joker_questions": [
+      {
+        "questionText": "Tuna Nehri kıyısındaki Macaristan'ın başkenti ______'dır.",
+        "correctAnswers": ["Budapeşte"]
+      }
+    ]
+  },
+  {
+    "city": "Varşova",
+    "joker_questions": [
+      {
+        "questionText": "Polonya'nın başkenti ______'dır.",
+        "correctAnswers": ["Varşova"]
+      }
+    ]
+  },
+  {
+    "city": "Mexico City",
+    "joker_questions": [
+      {
+        "questionText": "Meksika'nın başkenti ______'dır.",
+        "correctAnswers": ["Mexico City"]
+      }
+    ]
+  },
+  {
+    "city": "Toronto",
+    "joker_questions": [
+      {
+        "questionText": "CN Kulesi'nin bulunduğu Kanada'nın en büyük şehri ______'dır.",
+        "correctAnswers": ["Toronto"]
+      }
+    ]
+  },
+  {
+    "city": "Ottawa",
+    "joker_questions": [
+      {
+        "questionText": "Kanada'nın başkenti ______'dır.",
+        "correctAnswers": ["Ottawa"]
+      }
+    ]
+  },
+  {
+    "city": "Washington, D.C.",
+    "joker_questions": [
+      {
+        "questionText": "Beyaz Saray'ın bulunduğu, Amerika Birleşik Devletleri'nin başkenti ______'dır.",
+        "correctAnswers": ["Washington, D.C."]
+      }
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "joker_questions": [
+      {
+        "questionText": "Hollywood ve film endüstrisiyle ünlü Amerika şehri ______'dır.",
+        "correctAnswers": ["Los Angeles"]
+      }
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "joker_questions": [
+      {
+        "questionText": "Golden Gate Köprüsü ile ünlü Amerika şehri ______'dır.",
+        "correctAnswers": ["San Francisco"]
+      }
+    ]
+  },
+  {
+    "city": "Şam",
+    "joker_questions": [
+      {
+        "questionText": "Suriye'nin başkenti ______'dır.",
+        "correctAnswers": ["Şam"]
+      }
+    ]
+  },
+  {
+    "city": "Beyrut",
+    "joker_questions": [
+      {
+        "questionText": "Lübnan'ın başkenti ______'dır.",
+        "correctAnswers": ["Beyrut"]
+      }
+    ]
+  },
+  {
+    "city": "Bağdat",
+    "joker_questions": [
+      {
+        "questionText": "Irak'ın başkenti ______'dır.",
+        "correctAnswers": ["Bağdat"]
+      }
+    ]
+  },
+  {
+    "city": "Tahran",
+    "joker_questions": [
+      {
+        "questionText": "İran'ın başkenti ______'dır.",
+        "correctAnswers": ["Tahran"]
+      }
+    ]
+  },
+  {
+    "city": "Yeni Delhi",
+    "joker_questions": [
+      {
+        "questionText": "Hindistan'ın başkenti ______'dır.",
+        "correctAnswers": ["Yeni Delhi"]
+      }
+    ]
+  },
+  {
+    "city": "Bangkok",
+    "joker_questions": [
+      {
+        "questionText": "Tayland'ın başkenti ______'dır.",
+        "correctAnswers": ["Bangkok"]
+      }
+    ]
+  },
+  {
+    "city": "Cakarta",
+    "joker_questions": [
+      {
+        "questionText": "Endonezya'nın başkenti ______'dır.",
+        "correctAnswers": ["Cakarta"]
+      }
+    ]
+  },
+  {
+    "city": "Seul",
+    "joker_questions": [
+      {
+        "questionText": "Güney Kore'nin başkenti ______'dır.",
+        "correctAnswers": ["Seul"]
+      }
+    ]
+  },
+  {
+    "city": "Phnom Penh",
+    "joker_questions": [
+      {
+        "questionText": "Kamboçya'nın başkenti ______'dır.",
+        "correctAnswers": ["Phnom Penh"]
+      }
+    ]
+  },
+  {
+    "city": "Hanoi",
+    "joker_questions": [
+      {
+        "questionText": "Vietnam'ın başkenti ______'dır.",
+        "correctAnswers": ["Hanoi"]
+      }
+    ]
+  },
+  {
+    "city": "Manila",
+    "joker_questions": [
+      {
+        "questionText": "Filipinler'in başkenti ______'dır.",
+        "correctAnswers": ["Manila"]
+      }
+    ]
+  },
+  {
+    "city": "Kuala Lumpur",
+    "joker_questions": [
+      {
+        "questionText": "Petronas İkiz Kuleleri'nin bulunduğu Malezya'nın başkenti ______'dır.",
+        "correctAnswers": ["Kuala Lumpur"]
+      }
+    ]
+  },
+  {
+    "city": "Dakka",
+    "joker_questions": [
+      {
+        "questionText": "Bangladeş'in başkenti ______'dır.",
+        "correctAnswers": ["Dakka"]
+      }
+    ]
+  },
+  {
+    "city": "İslamabad",
+    "joker_questions": [
+      {
+        "questionText": "Pakistan'ın başkenti ______'dır.",
+        "correctAnswers": ["İslamabad"]
+      }
+    ]
+  },
+  {
+    "city": "Kabil",
+    "joker_questions": [
+      {
+        "questionText": "Afganistan'ın başkenti ______'dır.",
+        "correctAnswers": ["Kabil"]
+      }
+    ]
+  },
+  {
+    "city": "Ankara",
+    "joker_questions": [
+      {
+        "questionText": "Anıtkabir hangi şehrimizdedir? ______",
+        "correctAnswers": ["Ankara"]
+      }
+    ]
+  },
+  {
+    "city": "Antalya",
+    "joker_questions": [
+      {
+        "questionText": "Düden Şelalesi ve Lara Plajı ile ünlü tatil şehrimiz ______'dır.",
+        "correctAnswers": ["Antalya"]
+      }
+    ]
+  },
+  {
+    "city": "Bursa",
+    "joker_questions": [
+      {
+        "questionText": "Uludağ ve İskender Kebabı ile ünlü şehrimiz ______'dır.",
+        "correctAnswers": ["Bursa"]
+      }
+    ]
+  },
+  {
+    "city": "Konya",
+    "joker_questions": [
+      {
+        "questionText": "Mevlana Türbesi hangi şehrimizdedir? ______",
+        "correctAnswers": ["Konya"]
+      }
+    ]
+  },
+  {
+    "city": "Trabzon",
+    "joker_questions": [
+      {
+        "questionText": "Sümela Manastırı ve Uzungöl hangi şehrimizdedir? ______",
+        "correctAnswers": ["Trabzon"]
+      }
+    ]
+  },
+  {
+    "city": "Erzurum",
+    "joker_questions": [
+      {
+        "questionText": "Çifte Minareli Medrese ve Palandöken Kayak Merkezi hangi şehrimizdedir? ______",
+        "correctAnswers": ["Erzurum"]
+      }
+    ]
+  },
+  {
+    "city": "Çanakkale",
+    "joker_questions": [
+      {
+        "questionText": "Truva Atı ve Şehitler Abidesi hangi şehrimizdedir? ______",
+        "correctAnswers": ["Çanakkale"]
+      }
+    ]
+  },
+  {
+    "city": "Edirne",
+    "joker_questions": [
+      {
+        "questionText": "Selimiye Camii hangi şehrimizdedir? ______",
+        "correctAnswers": ["Edirne"]
+      }
+    ]
+  },
+  {
+    "city": "Kayseri",
+    "joker_questions": [
+      {
+        "questionText": "Pastırma ve mantısı ile ünlü şehrimiz ______'dır.",
+        "correctAnswers": ["Kayseri"]
+      }
+    ]
+  },
+  {
+    "city": "Adana",
+    "joker_questions": [
+      {
+        "questionText": "Adana Kebabı ve Seyhan Nehri ile ünlü şehrimiz ______'dır.",
+        "correctAnswers": ["Adana"]
+      }
+    ]
+  },
+  {
+    "city": "Diyarbakır",
+    "joker_questions": [
+      {
+        "questionText": "Dicle Nehri ve surları ile ünlü şehrimiz ______'dır.",
+        "correctAnswers": ["Diyarbakır"]
+      }
+    ]
+  },
+  {
+    "city": "Gaziantep",
+    "joker_questions": [
+      {
+        "questionText": "Baklava ve Zeugma Mozaik Müzesi ile ünlü şehrimiz ______'dır.",
+        "correctAnswers": ["Gaziantep"]
+      }
+    ]
+  },
+  {
+    "city": "Şanlıurfa",
+    "joker_questions": [
+      {
+        "questionText": "Balıklıgöl ve Göbeklitepe hangi şehrimizdedir? ______",
+        "correctAnswers": ["Şanlıurfa"]
+      }
+    ]
+  },
+  {
+    "city": "Van",
+    "joker_questions": [
+      {
+        "questionText": "Van Gölü ve Van Kedisi ile ünlü şehrimiz ______'dır.",
+        "correctAnswers": ["Van"]
+      }
+    ]
+  }
+]

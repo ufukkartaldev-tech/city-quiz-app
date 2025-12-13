@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Level Card Dimensions -->
+    <dimen name="level_card_height">140dp</dimen>
+    <dimen name="level_card_margin">8dp</dimen>
+    
+    <!-- Common Dimensions -->
+    <dimen name="corner_radius_small">8dp</dimen>
+    <dimen name="corner_radius_medium">12dp</dimen>
+    <dimen name="corner_radius_large">16dp</dimen>
+    
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+</resources>
