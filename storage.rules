@@ -1,0 +1,127 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // ============================================
+    // HELPER FUNCTIONS
+    // ============================================
+    
+    // Kullanıcı giriş yapmış mı?
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    // Kullanıcı kendi dosyası mı?
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+    
+    // Dosya boyutu kontrolü
+    function isValidSize(maxSizeMB) {
+      return request.resource.size <= maxSizeMB * 1024 * 1024;
+    }
+    
+    // Dosya tipi kontrolü (resim)
+    function isImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+    
+    // ============================================
+    // USER PROFILE PHOTOS
+    // ============================================
+    match /profile_photos/{userId}/{fileName} {
+      // Herkes profil fotoğraflarını görebilir
+      allow read: if true;
+      
+      // Sadece kendi profil fotoğrafını yükleyebilir
+      allow create: if isSignedIn() &&
+                       isOwner(userId) &&
+                       isImage() &&
+                       isValidSize(5); // Maksimum 5MB
+      
+      // Sadece kendi profil fotoğrafını güncelleyebilir
+      allow update: if isSignedIn() &&
+                       isOwner(userId) &&
+                       isImage() &&
+                       isValidSize(5);
+      
+      // Sadece kendi profil fotoğrafını silebilir
+      allow delete: if isSignedIn() && isOwner(userId);
+    }
+    
+    // ============================================
+    // QUESTION IMAGES (Admin Only)
+    // ============================================
+    match /question_images/{fileName} {
+      // Herkes soru resimlerini görebilir
+      allow read: if true;
+      
+      // Sadece admin yükleyebilir (Cloud Function ile)
+      allow create: if false;
+      
+      // Güncelleme yasak
+      allow update: if false;
+      
+      // Silme yasak
+      allow delete: if false;
+    }
+    
+    // ============================================
+    // USER SUBMITTED QUESTION IMAGES
+    // ============================================
+    match /user_question_images/{userId}/{fileName} {
+      // Herkes görebilir
+      allow read: if true;
+      
+      // Kullanıcı kendi soru resmini yükleyebilir
+      allow create: if isSignedIn() &&
+                       isOwner(userId) &&
+                       isImage() &&
+                       isValidSize(3); // Maksimum 3MB
+      
+      // Güncelleme yasak
+      allow update: if false;
+      
+      // Sadece kendi resmini silebilir
+      allow delete: if isSignedIn() && isOwner(userId);
+    }
+    
+    // ============================================
+    // ACHIEVEMENT ICONS (Read-Only)
+    // ============================================
+    match /achievement_icons/{fileName} {
+      // Herkes görebilir
+      allow read: if true;
+      
+      // Yazma yasak (sadece admin)
+      allow write: if false;
+    }
+    
+    // ============================================
+    // GAME SCREENSHOTS (Optional)
+    // ============================================
+    match /game_screenshots/{userId}/{fileName} {
+      // Herkes görebilir
+      allow read: if true;
+      
+      // Kullanıcı kendi screenshot'ını yükleyebilir
+      allow create: if isSignedIn() &&
+                       isOwner(userId) &&
+                       isImage() &&
+                       isValidSize(10); // Maksimum 10MB
+      
+      // Güncelleme yasak
+      allow update: if false;
+      
+      // Sadece kendi screenshot'ını silebilir
+      allow delete: if isSignedIn() && isOwner(userId);
+    }
+    
+    // ============================================
+    // DEFAULT: HER ŞEY YASAK
+    // ============================================
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

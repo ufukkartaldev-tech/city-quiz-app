@@ -1,0 +1,309 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // ============================================
+    // HELPER FUNCTIONS
+    // ============================================
+    
+    // Kullanıcı giriş yapmış mı?
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    // Kullanıcı kendi verisi mi?
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+    
+    // Kullanıcı doğrulanmış mı?
+    function isVerified() {
+      return request.auth.token.email_verified == true;
+    }
+    
+    // Veri boyutu kontrolü (spam önleme)
+    function isValidSize(data, maxSize) {
+      return data.size() <= maxSize;
+    }
+    
+    // String uzunluk kontrolü
+    function isValidString(str, minLen, maxLen) {
+      return str is string && 
+             str.size() >= minLen && 
+             str.size() <= maxLen;
+    }
+    
+    // ============================================
+    // USERS COLLECTION
+    // ============================================
+    match /users/{userId} {
+      // Herkes kullanıcı profillerini okuyabilir (arkadaş arama için)
+      allow read: if isSignedIn();
+      
+      // Sadece kendi profilini oluşturabilir
+      allow create: if isSignedIn() && 
+                       isOwner(userId) &&
+                       isValidString(request.resource.data.username, 3, 20) &&
+                       isValidString(request.resource.data.email, 5, 100);
+      
+      // Sadece kendi profilini güncelleyebilir
+      allow update: if isSignedIn() && 
+                       isOwner(userId) &&
+                       // Username değiştiriliyorsa geçerli olmalı
+                       (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['username']) ||
+                        isValidString(request.resource.data.username, 3, 20));
+      
+      // Profil silme yasak (veri bütünlüğü için)
+      allow delete: if false;
+      
+      // ============================================
+      // FRIENDS SUBCOLLECTION
+      // ============================================
+      match /friends/{friendId} {
+        // Sadece kendi arkadaş listesini okuyabilir
+        allow read: if isSignedIn() && isOwner(userId);
+        
+        // Arkadaş ekleme (sadece arkadaşlık kabul edildiğinde)
+        allow create: if isSignedIn() && isOwner(userId);
+        
+        // Arkadaş güncelleme (online status vs.)
+        allow update: if isSignedIn() && isOwner(userId);
+        
+        // Arkadaş silme (unfriend)
+        allow delete: if isSignedIn() && isOwner(userId);
+      }
+      
+      // ============================================
+      // USER STATS SUBCOLLECTION
+      // ============================================
+      match /stats/{statId} {
+        // Sadece kendi istatistiklerini okuyabilir
+        allow read: if isSignedIn() && isOwner(userId);
+        
+        // Sadece kendi istatistiklerini yazabilir
+        allow write: if isSignedIn() && isOwner(userId);
+      }
+    }
+    
+    // ============================================
+    // FRIEND REQUESTS COLLECTION
+    // ============================================
+    match /friend_requests/{requestId} {
+      // İstek gönderen veya alan okuyabilir
+      allow read: if isSignedIn() && 
+                     (request.auth.uid == resource.data.fromUid ||
+                      request.auth.uid == resource.data.toUid);
+      
+      // İstek gönderme
+      allow create: if isSignedIn() &&
+                       request.auth.uid == request.resource.data.fromUid &&
+                       isValidString(request.resource.data.fromUsername, 3, 20) &&
+                       request.resource.data.status == 'PENDING' &&
+                       // Kendine istek gönderemez
+                       request.resource.data.fromUid != request.resource.data.toUid;
+      
+      // İstek güncelleme (kabul/red)
+      allow update: if isSignedIn() &&
+                       // Sadece alıcı güncelleyebilir
+                       request.auth.uid == resource.data.toUid &&
+                       // Sadece status değişebilir
+                       request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status']) &&
+                       // Status ACCEPTED veya REJECTED olmalı
+                       (request.resource.data.status == 'ACCEPTED' || 
+                        request.resource.data.status == 'REJECTED');
+      
+      // İstek silme (iptal)
+      allow delete: if isSignedIn() &&
+                       (request.auth.uid == resource.data.fromUid ||
+                        request.auth.uid == resource.data.toUid);
+    }
+    
+    // ============================================
+    // HIGH SCORES COLLECTION
+    // ============================================
+    match /high_scores/{scoreId} {
+      // Herkes skorları okuyabilir (leaderboard için)
+      allow read: if isSignedIn();
+      
+      // Sadece kendi skorunu ekleyebilir
+      allow create: if isSignedIn() &&
+                       request.auth.uid == request.resource.data.userId &&
+                       request.resource.data.score >= 0 &&
+                       request.resource.data.score <= 10000; // Makul bir maksimum
+      
+      // Skor güncelleme yasak (cheating önleme)
+      allow update: if false;
+      
+      // Skor silme yasak
+      allow delete: if false;
+    }
+    
+    // ============================================
+    // GAME ROOMS COLLECTION (Multiplayer)
+    // ============================================
+    match /game_rooms/{roomId} {
+      // Herkes odaları okuyabilir (oda listesi için)
+      allow read: if isSignedIn();
+      
+      // Oda oluşturma
+      allow create: if isSignedIn() &&
+                       request.auth.uid == request.resource.data.hostUid &&
+                       request.resource.data.status == 'WAITING' &&
+                       request.resource.data.players.size() == 1 &&
+                       request.resource.data.players[0] == request.auth.uid;
+      
+      // Oda güncelleme (oyuncu katılma, oyun başlatma)
+      allow update: if isSignedIn() &&
+                       (
+                         // Host oyunu başlatabilir
+                         (request.auth.uid == resource.data.hostUid) ||
+                         // Oyuncu katılabilir (oda WAITING durumundaysa)
+                         (resource.data.status == 'WAITING' && 
+                          resource.data.players.size() < 2 &&
+                          !resource.data.players.hasAny([request.auth.uid]))
+                       );
+      
+      // Oda silme (sadece host)
+      allow delete: if isSignedIn() && 
+                       request.auth.uid == resource.data.hostUid;
+    }
+    
+    // ============================================
+    // QUESTIONS COLLECTION
+    // ============================================
+    match /questions/{questionId} {
+      // Herkes soruları okuyabilir
+      allow read: if isSignedIn();
+      
+      // Soru ekleme yasak (sadece admin)
+      allow create: if false;
+      
+      // Soru güncelleme yasak
+      allow update: if false;
+      
+      // Soru silme yasak
+      allow delete: if false;
+    }
+    
+    // ============================================
+    // USER SUBMITTED QUESTIONS (Community)
+    // ============================================
+    match /user_questions/{questionId} {
+      // Herkes onaylanmış soruları okuyabilir
+      allow read: if isSignedIn() && 
+                     (resource.data.status == 'APPROVED' ||
+                      request.auth.uid == resource.data.submittedBy);
+      
+      // Kullanıcı soru gönderebilir
+      allow create: if isSignedIn() &&
+                       request.auth.uid == request.resource.data.submittedBy &&
+                       isValidString(request.resource.data.question.questionText, 10, 200) &&
+                       isValidString(request.resource.data.question.optionA, 1, 100) &&
+                       isValidString(request.resource.data.question.optionB, 1, 100) &&
+                       isValidString(request.resource.data.question.optionC, 1, 100) &&
+                       isValidString(request.resource.data.question.optionD, 1, 100) &&
+                       request.resource.data.status == 'PENDING' &&
+                       request.resource.data.upvotes == 0 &&
+                       request.resource.data.downvotes == 0;
+      
+      // Sadece kendi sorusunu güncelleyebilir (PENDING durumundayken)
+      allow update: if isSignedIn() &&
+                       request.auth.uid == resource.data.submittedBy &&
+                       resource.data.status == 'PENDING';
+      
+      // Sadece kendi sorusunu silebilir (PENDING durumundayken)
+      allow delete: if isSignedIn() &&
+                       request.auth.uid == resource.data.submittedBy &&
+                       resource.data.status == 'PENDING';
+    }
+    
+    // ============================================
+    // ACHIEVEMENTS COLLECTION
+    // ============================================
+    match /achievements/{achievementId} {
+      // Herkes başarımları okuyabilir
+      allow read: if isSignedIn();
+      
+      // Başarım ekleme/güncelleme/silme yasak (sadece admin)
+      allow write: if false;
+    }
+    
+    // ============================================
+    // USER ACHIEVEMENTS
+    // ============================================
+    match /user_achievements/{userId} {
+      // Herkes başarımları görebilir
+      allow read: if isSignedIn();
+      
+      // Sadece kendi başarımını ekleyebilir
+      allow create: if isSignedIn() && isOwner(userId);
+      
+      // Başarım güncelleme yasak (cheating önleme)
+      allow update: if false;
+      
+      // Başarım silme yasak
+      allow delete: if false;
+    }
+    
+    // ============================================
+    // DAILY TASKS
+    // ============================================
+    match /daily_tasks/{taskId} {
+      // Herkes görevleri okuyabilir
+      allow read: if isSignedIn();
+      
+      // Görev ekleme/güncelleme/silme yasak (sadece admin)
+      allow write: if false;
+    }
+    
+    // ============================================
+    // USER TASK PROGRESS
+    // ============================================
+    match /user_task_progress/{userId} {
+      // Sadece kendi görev ilerlemesini okuyabilir
+      allow read: if isSignedIn() && isOwner(userId);
+      
+      // Sadece kendi görev ilerlemesini yazabilir
+      allow write: if isSignedIn() && isOwner(userId);
+    }
+    
+    // ============================================
+    // NOTIFICATIONS
+    // ============================================
+    match /notifications/{notificationId} {
+      // Sadece kendi bildirimlerini okuyabilir
+      allow read: if isSignedIn() && 
+                     request.auth.uid == resource.data.userId;
+      
+      // Bildirim oluşturma (sistem tarafından)
+      allow create: if isSignedIn();
+      
+      // Bildirim güncelleme (okundu işaretleme)
+      allow update: if isSignedIn() &&
+                       request.auth.uid == resource.data.userId &&
+                       request.resource.data.diff(resource.data).affectedKeys().hasOnly(['isRead']);
+      
+      // Bildirim silme
+      allow delete: if isSignedIn() &&
+                       request.auth.uid == resource.data.userId;
+    }
+    
+    // ============================================
+    // LEADERBOARD (Cached)
+    // ============================================
+    match /leaderboard/{leaderboardId} {
+      // Herkes liderlik tablosunu okuyabilir
+      allow read: if isSignedIn();
+      
+      // Liderlik tablosu yazma yasak (Cloud Function tarafından güncellenir)
+      allow write: if false;
+    }
+    
+    // ============================================
+    // DEFAULT: HER ŞEY YASAK
+    // ============================================
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
