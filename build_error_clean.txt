@@ -1,0 +1,2288 @@
+﻿> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:injectCrashlyticsMappingFileIdDebug
+> Task :app:processDebugGoogleServices
+> Task :app:mergeDebugResources
+> Task :app:packageDebugResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:checkDebugAarMetadata
+> Task :app:processDebugMainManifest
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:javaPreCompileDebug
+> Task :app:processDebugManifestForPackage
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:buildKotlinToolingMetadata
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:injectCrashlyticsMappingFileIdRelease
+> Task :app:processReleaseGoogleServices
+> Task :app:checkDebugDuplicateClasses
+> Task :app:processDebugResources
+> Task :app:mergeLibDexDebug
+> Task :app:packageReleaseResources
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:mergeReleaseResources
+> Task :app:extractDeepLinksRelease
+> Task :app:checkReleaseAarMetadata
+> Task :app:parseReleaseLocalResources
+> Task :app:processReleaseMainManifest
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:processReleaseManifest
+> Task :app:processReleaseManifestForPackage
+> Task :app:javaPreCompileRelease
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs NO-SOURCE
+> Task :app:stripReleaseDebugSymbols NO-SOURCE
+> Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:processApplicationManifestReleaseForBundle
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResValues
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:mergeExtDexDebug
+> Task :app:processReleaseResources
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:bundleReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+
+> Task :app:kaptReleaseKotlin
+.\gradlew.bat : C:\Users\90538\AndroidStu
+dioProjects\oyun\app\build\tmp\kapt3\stub
+s\release\com\example\oyun\notifications\
+QuizFirebaseMessagingService.java:19: err
+or: cannot find symbol
+At line:1 char:1
++ .\gradlew.bat clean build --stacktrace 
+2>&1 | Out-File -FilePath buil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo          : NotSpecifi 
+   ed: (C:\Users\90538\...not find symb  
+  ol:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeComm 
+   andError
+ 
+public final class QuizFirebaseMessagingS
+ervice extends FirebaseMessagingService {
+                                         
+               ^
+  symbol: class FirebaseMessagingService
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\build\tmp\kapt3\stubs\release\com\ex
+ample\oyun\notifications\QuizFirebaseMess
+agingService.java:19: error: [Hilt] @Andr
+oidEntryPoint base class must extend Comp
+onentActivity, (support) Fragment, View, 
+Service, or BroadcastReceiver.
+public final class QuizFirebaseMessagingS
+ervice extends FirebaseMessagingService {
+             ^
+  [1;31m[Hilt] Processing did not comple
+te. See error above for details.[0m
+error: InjectProcessingStep was unable to
+ process 'notificationManager' because 'F
+irebaseMessagingService' could not be res
+olved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.notifications.QuizFirebaseMessagingServ
+ice
+      => type (ERROR superclass): Firebas
+eMessagingService
+  
+  If type 'FirebaseMessagingService' is a
+ generated type, check above for compilat
+ion errors that may have prevented the ty
+pe from being generated. Otherwise, ensur
+e that type 'FirebaseMessagingService' is
+ on your classpath.
+error: ModuleProcessingStep was unable to
+ process 'com.example.oyun.di.AppModule' 
+because 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideSharedPreferences
+(android.content.Context)' because 'Gson'
+ could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideGson()' because '
+Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideSoundManager(andr
+oid.content.Context)' because 'Gson' coul
+d not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideAdManager(android
+.content.Context)' because 'Gson' could n
+ot be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideDatabase(android.
+content.Context)' because 'Gson' could no
+t be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideHighScoreDao(com.
+example.oyun.data.AppDatabase)' because '
+Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideCachedQuestionDao
+(com.example.oyun.data.AppDatabase)' beca
+use 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideHybridQuestionRep
+ository(android.content.Context,com.examp
+le.oyun.data.local.CachedQuestionDao,com.
+google.firebase.firestore.FirebaseFiresto
+re,Gson)' because 'Gson' could not be res
+olved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseFirestore
+()' because 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideHighScoreRemoteRe
+pository(com.google.firebase.firestore.Fi
+rebaseFirestore)' because 'Gson' could no
+t be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseSyncServi
+ce(android.content.Context,com.example.oy
+un.data.HighScoreDao,com.example.oyun.dat
+a.remote.HighScoreRemoteRepository)' beca
+use 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseAuth()' b
+ecause 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+
+> Task :app:kaptReleaseKotlin FAILED
+
+> Task :app:kaptDebugKotlin
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideAuthRepository(co
+m.google.firebase.auth.FirebaseAuth,andro
+id.content.SharedPreferences)' because 'G
+son' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideGoogleSignInHelpe
+r()' because 'Gson' could not be resolved
+.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFriendsRepository
+(com.google.firebase.firestore.FirebaseFi
+restore,com.google.firebase.auth.Firebase
+Auth)' because 'Gson' could not be resolv
+ed.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideNotificationManag
+er(android.content.Context)' because 'Gso
+n' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseMessaging
+()' because 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\build\tmp\kapt3\stubs\debug\com\exam
+ple\oyun\notifications\QuizFirebaseMessag
+ingService.java:19: error: cannot find sy
+mbol
+public final class QuizFirebaseMessagingS
+ervice extends FirebaseMessagingService {
+                                         
+               ^
+  symbol: class FirebaseMessagingService
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\build\tmp\kapt3\stubs\debug\com\exam
+ple\oyun\notifications\QuizFirebaseMessag
+ingService.java:19: error: [Hilt] @Androi
+dEntryPoint base class must extend Compon
+entActivity, (support) Fragment, View, Se
+rvice, or BroadcastReceiver.
+public final class QuizFirebaseMessagingS
+ervice extends FirebaseMessagingService {
+             ^
+  [1;31m[Hilt] Processing did not comple
+te. See error above for details.[0m
+error: InjectProcessingStep was unable to
+ process 'notificationManager' because 'F
+irebaseMessagingService' could not be res
+olved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.notifications.QuizFirebaseMessagingServ
+ice
+      => type (ERROR superclass): Firebas
+eMessagingService
+  
+  If type 'FirebaseMessagingService' is a
+ generated type, check above for compilat
+ion errors that may have prevented the ty
+pe from being generated. Otherwise, ensur
+e that type 'FirebaseMessagingService' is
+ on your classpath.
+error: ModuleProcessingStep was unable to
+ process 'com.example.oyun.di.AppModule' 
+because 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideSharedPreferences
+(android.content.Context)' because 'Gson'
+ could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideGson()' because '
+Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideSoundManager(andr
+oid.content.Context)' because 'Gson' coul
+d not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideAdManager(android
+.content.Context)' because 'Gson' could n
+ot be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideDatabase(android.
+content.Context)' because 'Gson' could no
+t be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideHighScoreDao(com.
+example.oyun.data.AppDatabase)' because '
+Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideCachedQuestionDao
+(com.example.oyun.data.AppDatabase)' beca
+use 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideHybridQuestionRep
+ository(android.content.Context,com.examp
+le.oyun.data.local.CachedQuestionDao,com.
+google.firebase.firestore.FirebaseFiresto
+re,Gson)' because 'Gson' could not be res
+olved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseFirestore
+()' because 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideHighScoreRemoteRe
+pository(com.google.firebase.firestore.Fi
+rebaseFirestore)' because 'Gson' could no
+t be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseSyncServi
+ce(android.content.Context,com.example.oy
+un.data.HighScoreDao,com.example.oyun.dat
+a.remote.HighScoreRemoteRepository)' beca
+use 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseAuth()' b
+ecause 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideAuthRepository(co
+m.google.firebase.auth.FirebaseAuth,andro
+id.content.SharedPreferences)' because 'G
+son' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideGoogleSignInHelpe
+r()' because 'Gson' could not be resolved
+.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFriendsRepository
+(com.google.firebase.firestore.FirebaseFi
+restore,com.google.firebase.auth.Firebase
+Auth)' because 'Gson' could not be resolv
+ed.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideNotificationManag
+er(android.content.Context)' because 'Gso
+n' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+error: BindingMethodProcessingStep was un
+able to process 'provideFirebaseMessaging
+()' because 'Gson' could not be resolved.
+  
+  Dependency trace:
+      => element (CLASS): com.example.oyu
+n.di.AppModule
+      => element (METHOD): provideHybridQ
+uestionRepository(android.content.Context
+,com.example.oyun.data.local.CachedQuesti
+onDao,com.google.firebase.firestore.Fireb
+aseFirestore,Gson)
+      => element (PARAMETER): gson
+      => type (ERROR parameter type): Gso
+n
+  
+  If type 'Gson' is a generated type, che
+ck above for compilation errors that may 
+have prevented the type from being genera
+ted. Otherwise, ensure that type 'Gson' i
+s on your classpath.
+
+> Task :app:kaptDebugKotlin FAILED
+
+
+[Incubating] Problems report is available at: file:///C:/Users/90538/AndroidStudioProjects/oyun/build/reports/problems/problems-report.html
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:kaptRelea
+seKotlin'.
+> A failure occurred while executing org.
+jetbrains.kotlin.gradle.internal.KaptWith
+outKotlincTask$KaptExecutionWorkAction
+
+* Try:
+> Run with --info or --debug option to ge
+t more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.or
+g.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionExcepti
+on: Execution failed for task ':app:kaptR
+eleaseKotlin'.
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.lambda$exec
+uteIfValid$1(ExecuteActionsTaskExecuter.j
+ava:130)
+	at org.gradle.internal.Try$Failure.ifSuc
+cessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.executeIfVa
+lid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.execute(Exe
+cuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.executi
+on.ProblemsTaskPathTrackingTaskExecuter.e
+xecute(ProblemsTaskPathTrackingTaskExecut
+er.java:40)
+	at org.gradle.api.internal.tasks.executi
+on.FinalizePropertiesTaskExecuter.execute
+(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.executi
+on.ResolveTaskExecutionModeExecuter.execu
+te(ResolveTaskExecutionModeExecuter.java:
+51)
+	at org.gradle.api.internal.tasks.executi
+on.SkipTaskWithNoActionsExecuter.execute(
+SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.executi
+on.SkipOnlyIfTaskExecuter.execute(SkipOnl
+yIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.executi
+on.CatchExceptionTaskExecuter.execute(Cat
+chExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.executeTask(
+EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:52)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter.execute(EventF
+iringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNo
+deExecutor.execute(LocalTaskNodeExecutor.
+java:42)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:331)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:318)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.lambda$execute$0(DefaultTas
+kExecutionGraph.java:314)
+	at org.gradle.internal.operations.Curren
+tBuildOperationRef.with(CurrentBuildOpera
+tionRef.java:85)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:314)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.execute(DefaultPl
+anExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.run(DefaultPlanEx
+ecutor.java:376)
+	at org.gradle.internal.concurrent.Execut
+orPolicy$CatchAndRecordFailures.onExecute
+(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.Abstra
+ctManagedExecutor$1.run(AbstractManagedEx
+ecutor.java:48)
+Caused by: org.gradle.workers.internal.De
+faultWorkerExecutor$WorkExecutionExceptio
+n: A failure occurred while executing org
+.jetbrains.kotlin.gradle.internal.KaptWit
+houtKotlincTask$KaptExecutionWorkAction
+	at org.gradle.workers.internal.DefaultWo
+rkerExecutor$WorkItemExecution.waitForCom
+pletion(DefaultWorkerExecutor.java:287)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.lambda$waitForItemsAndGatherF
+ailures$2(DefaultAsyncWorkTracker.java:13
+0)
+	at org.gradle.internal.Factories$1.creat
+e(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withoutLocks(DefaultWorkerL
+easeService.java:335)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withoutLocks(DefaultWorkerL
+easeService.java:318)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withoutLock(DefaultWorkerLe
+aseService.java:323)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForItemsAndGatherFailures
+(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForItemsAndGatherFailures
+(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForAll(DefaultAsyncWorkTr
+acker.java:78)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForCompletion(DefaultAsyn
+cWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution$3.run(TaskExecution.java
+:252)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$1.execute(DefaultBu
+ildOperationRunner.java:30)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$1.execute(DefaultBu
+ildOperationRunner.java:27)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.run(DefaultBuildOpe
+rationRunner.java:48)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.executeAction(TaskExecut
+ion.java:229)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.executeActions(TaskExecu
+tion.java:212)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.executeWithPreviousOutpu
+tFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.execute(TaskExecution.ja
+va:162)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.executeInternal(ExecuteStep.ja
+va:105)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.access$000(ExecuteStep.java:44
+)
+	at org.gradle.internal.execution.steps.E
+xecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.E
+xecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.C
+ancelExecutionStep.execute(CancelExecutio
+nStep.java:42)
+	at org.gradle.internal.execution.steps.T
+imeoutStep.executeWithoutTimeout(TimeoutS
+tep.java:75)
+	at org.gradle.internal.execution.steps.T
+imeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.P
+reCreateOutputParentsStep.execute(PreCrea
+teOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.P
+reCreateOutputParentsStep.execute(PreCrea
+teOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.R
+emovePreviousOutputsStep.execute(RemovePr
+eviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.R
+emovePreviousOutputsStep.execute(RemovePr
+eviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.B
+roadcastChangingOutputsStep.execute(Broad
+castChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.B
+roadcastChangingOutputsStep.execute(Broad
+castChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.C
+aptureOutputsAfterExecutionStep.execute(C
+aptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.C
+aptureOutputsAfterExecutionStep.execute(C
+aptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.R
+esolveInputChangesStep.execute(ResolveInp
+utChangesStep.java:40)
+	at org.gradle.internal.execution.steps.R
+esolveInputChangesStep.execute(ResolveInp
+utChangesStep.java:29)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.executeWithoutCache(BuildCa
+cheStep.java:189)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.lambda$execute$1(BuildCache
+Step.java:75)
+	at org.gradle.internal.Either$Right.fold
+(Either.java:175)
+	at org.gradle.internal.execution.caching
+.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.execute(BuildCacheStep.java
+:73)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.execute(BuildCacheStep.java
+:48)
+	at org.gradle.internal.execution.steps.S
+toreExecutionStateStep.execute(StoreExecu
+tionStateStep.java:46)
+	at org.gradle.internal.execution.steps.S
+toreExecutionStateStep.execute(StoreExecu
+tionStateStep.java:35)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.executeBecause(SkipUpToDa
+teStep.java:75)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.lambda$execute$2(SkipUpTo
+DateStep.java:53)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.execute(SkipUpToDateStep.
+java:53)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.execute(SkipUpToDateStep.
+java:35)
+	at org.gradle.internal.execution.steps.l
+egacy.MarkSnapshottingInputsFinishedStep.
+execute(MarkSnapshottingInputsFinishedSte
+p.java:37)
+	at org.gradle.internal.execution.steps.l
+egacy.MarkSnapshottingInputsFinishedStep.
+execute(MarkSnapshottingInputsFinishedSte
+p.java:27)
+	at org.gradle.internal.execution.steps.R
+esolveIncrementalCachingStateStep.execute
+Delegate(ResolveIncrementalCachingStateSt
+ep.java:49)
+	at org.gradle.internal.execution.steps.R
+esolveIncrementalCachingStateStep.execute
+Delegate(ResolveIncrementalCachingStateSt
+ep.java:27)
+	at org.gradle.internal.execution.steps.A
+bstractResolveCachingStateStep.execute(Ab
+stractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.A
+bstractResolveCachingStateStep.execute(Ab
+stractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.R
+esolveChangesStep.execute(ResolveChangesS
+tep.java:65)
+	at org.gradle.internal.execution.steps.R
+esolveChangesStep.execute(ResolveChangesS
+tep.java:36)
+	at org.gradle.internal.execution.steps.V
+alidateStep.execute(ValidateStep.java:107
+)
+	at org.gradle.internal.execution.steps.V
+alidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.A
+bstractCaptureStateBeforeExecutionStep.ex
+ecute(AbstractCaptureStateBeforeExecution
+Step.java:64)
+	at org.gradle.internal.execution.steps.A
+bstractCaptureStateBeforeExecutionStep.ex
+ecute(AbstractCaptureStateBeforeExecution
+Step.java:43)
+	at org.gradle.internal.execution.steps.A
+bstractSkipEmptyWorkStep.executeWithNonEm
+ptySources(AbstractSkipEmptyWorkStep.java
+:125)
+	at org.gradle.internal.execution.steps.A
+bstractSkipEmptyWorkStep.execute(Abstract
+SkipEmptyWorkStep.java:56)
+	at org.gradle.internal.execution.steps.A
+bstractSkipEmptyWorkStep.execute(Abstract
+SkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.l
+egacy.MarkSnapshottingInputsStartedStep.e
+xecute(MarkSnapshottingInputsStartedStep.
+java:38)
+	at org.gradle.internal.execution.steps.L
+oadPreviousExecutionStateStep.execute(Loa
+dPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.L
+oadPreviousExecutionStateStep.execute(Loa
+dPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.H
+andleStaleOutputsStep.execute(HandleStale
+OutputsStep.java:75)
+	at org.gradle.internal.execution.steps.H
+andleStaleOutputsStep.execute(HandleStale
+OutputsStep.java:41)
+	at org.gradle.internal.execution.steps.A
+ssignMutableWorkspaceStep.lambda$execute$
+0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution$4.withWorkspace(TaskExec
+ution.java:289)
+	at org.gradle.internal.execution.steps.A
+ssignMutableWorkspaceStep.execute(AssignM
+utableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.A
+ssignMutableWorkspaceStep.execute(AssignM
+utableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.C
+hoosePipelineStep.execute(ChoosePipelineS
+tep.java:40)
+	at org.gradle.internal.execution.steps.C
+hoosePipelineStep.execute(ChoosePipelineS
+tep.java:23)
+	at org.gradle.internal.execution.steps.E
+xecuteWorkBuildOperationFiringStep.lambda
+$execute$2(ExecuteWorkBuildOperationFirin
+gStep.java:67)
+	at org.gradle.internal.execution.steps.E
+xecuteWorkBuildOperationFiringStep.execut
+e(ExecuteWorkBuildOperationFiringStep.jav
+a:67)
+	at org.gradle.internal.execution.steps.E
+xecuteWorkBuildOperationFiringStep.execut
+e(ExecuteWorkBuildOperationFiringStep.jav
+a:39)
+	at org.gradle.internal.execution.steps.I
+dentityCacheStep.execute(IdentityCacheSte
+p.java:46)
+	at org.gradle.internal.execution.steps.I
+dentityCacheStep.execute(IdentityCacheSte
+p.java:34)
+	at org.gradle.internal.execution.steps.I
+dentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.I
+dentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.De
+faultExecutionEngine$1.execute(DefaultExe
+cutionEngine.java:61)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.executeIfVa
+lid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.execute(Exe
+cuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.executi
+on.ProblemsTaskPathTrackingTaskExecuter.e
+xecute(ProblemsTaskPathTrackingTaskExecut
+er.java:40)
+	at org.gradle.api.internal.tasks.executi
+on.FinalizePropertiesTaskExecuter.execute
+(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.executi
+on.ResolveTaskExecutionModeExecuter.execu
+te(ResolveTaskExecutionModeExecuter.java:
+51)
+	at org.gradle.api.internal.tasks.executi
+on.SkipTaskWithNoActionsExecuter.execute(
+SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.executi
+on.SkipOnlyIfTaskExecuter.execute(SkipOnl
+yIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.executi
+on.CatchExceptionTaskExecuter.execute(Cat
+chExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.executeTask(
+EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:52)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter.execute(EventF
+iringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNo
+deExecutor.execute(LocalTaskNodeExecutor.
+java:42)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:331)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:318)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.lambda$execute$0(DefaultTas
+kExecutionGraph.java:314)
+	at org.gradle.internal.operations.Curren
+tBuildOperationRef.with(CurrentBuildOpera
+tionRef.java:85)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:314)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.execute(DefaultPl
+anExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.run(DefaultPlanEx
+ecutor.java:376)
+	at org.gradle.internal.concurrent.Execut
+orPolicy$CatchAndRecordFailures.onExecute
+(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.Abstra
+ctManagedExecutor$1.run(AbstractManagedEx
+ecutor.java:48)
+Caused by: java.lang.reflect.InvocationTa
+rgetException
+	at java.base/jdk.internal.reflect.Native
+MethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.Native
+MethodAccessorImpl.invoke(NativeMethodAcc
+essorImpl.java:77)
+	at java.base/jdk.internal.reflect.Delega
+tingMethodAccessorImpl.invoke(DelegatingM
+ethodAccessorImpl.java:43)
+	at org.jetbrains.kotlin.gradle.internal.
+KaptExecution.run(KaptWithoutKotlincTask.
+kt:320)
+	at org.jetbrains.kotlin.gradle.internal.
+KaptWithoutKotlincTask$KaptExecutionWorkA
+ction.execute(KaptWithoutKotlincTask.kt:2
+66)
+	at org.gradle.workers.internal.DefaultWo
+rkerServer.execute(DefaultWorkerServer.ja
+va:63)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1$1.create(NoIsolationWor
+kerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1$1.create(NoIsolationWor
+kerFactory.java:62)
+	at org.gradle.internal.classloader.Class
+LoaderUtils.executeInClassloader(ClassLoa
+derUtils.java:100)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1.lambda$execute$0(NoIsol
+ationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractW
+orker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractW
+orker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.workers.internal.AbstractW
+orker.executeWrappedInBuildOperation(Abst
+ractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1.execute(NoIsolationWork
+erFactory.java:59)
+	at org.gradle.workers.internal.DefaultWo
+rkerExecutor.lambda$submitWork$0(DefaultW
+orkerExecutor.java:174)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.runE
+xecution(DefaultConditionalExecutionQueue
+.java:194)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.acce
+ss$700(DefaultConditionalExecutionQueue.j
+ava:127)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner$1.ru
+n(DefaultConditionalExecutionQueue.java:1
+69)
+	at org.gradle.internal.Factories$1.creat
+e(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withLocks(DefaultWorkerLeas
+eService.java:263)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.runAsWorkerThread(DefaultWo
+rkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.runAsWorkerThread(DefaultWo
+rkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.runB
+atch(DefaultConditionalExecutionQueue.jav
+a:164)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.run(
+DefaultConditionalExecutionQueue.java:133
+)
+	... 2 more
+Caused by: org.jetbrains.kotlin.kapt3.bas
+e.util.KaptBaseError: Error while annotat
+ion processing
+	at org.jetbrains.kotlin.kapt3.base.Annot
+ationProcessingKt.doAnnotationProcessing(
+annotationProcessing.kt:138)
+	at org.jetbrains.kotlin.kapt3.base.Annot
+ationProcessingKt.doAnnotationProcessing$
+default(annotationProcessing.kt:33)
+	at org.jetbrains.kotlin.kapt3.base.Kapt.
+kapt(Kapt.kt:47)
+	... 33 more
+
+=========================================
+=====================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:kaptDebug
+Kotlin'.
+> A failure occurred while executing org.
+jetbrains.kotlin.gradle.internal.KaptWith
+outKotlincTask$KaptExecutionWorkAction
+
+* Try:
+> Run with --info or --debug option to ge
+t more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.or
+g.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionExcepti
+on: Execution failed for task ':app:kaptD
+ebugKotlin'.
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.lambda$exec
+uteIfValid$1(ExecuteActionsTaskExecuter.j
+ava:130)
+	at org.gradle.internal.Try$Failure.ifSuc
+cessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.executeIfVa
+lid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.execute(Exe
+cuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.executi
+on.ProblemsTaskPathTrackingTaskExecuter.e
+xecute(ProblemsTaskPathTrackingTaskExecut
+er.java:40)
+	at org.gradle.api.internal.tasks.executi
+on.FinalizePropertiesTaskExecuter.execute
+(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.executi
+on.ResolveTaskExecutionModeExecuter.execu
+te(ResolveTaskExecutionModeExecuter.java:
+51)
+	at org.gradle.api.internal.tasks.executi
+on.SkipTaskWithNoActionsExecuter.execute(
+SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.executi
+on.SkipOnlyIfTaskExecuter.execute(SkipOnl
+yIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.executi
+on.CatchExceptionTaskExecuter.execute(Cat
+chExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.executeTask(
+EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:52)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter.execute(EventF
+iringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNo
+deExecutor.execute(LocalTaskNodeExecutor.
+java:42)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:331)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:318)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.lambda$execute$0(DefaultTas
+kExecutionGraph.java:314)
+	at org.gradle.internal.operations.Curren
+tBuildOperationRef.with(CurrentBuildOpera
+tionRef.java:85)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:314)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.execute(DefaultPl
+anExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.run(DefaultPlanEx
+ecutor.java:376)
+	at org.gradle.internal.concurrent.Execut
+orPolicy$CatchAndRecordFailures.onExecute
+(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.Abstra
+ctManagedExecutor$1.run(AbstractManagedEx
+ecutor.java:48)
+	at java.base/java.util.concurrent.Thread
+PoolExecutor.runWorker(ThreadPoolExecutor
+.java:1136)
+	at java.base/java.util.concurrent.Thread
+PoolExecutor$Worker.run(ThreadPoolExecuto
+r.java:635)
+	at java.base/java.lang.Thread.run(Thread
+.java:842)
+Caused by: org.gradle.workers.internal.De
+faultWorkerExecutor$WorkExecutionExceptio
+n: A failure occurred while executing org
+.jetbrains.kotlin.gradle.internal.KaptWit
+houtKotlincTask$KaptExecutionWorkAction
+	at org.gradle.workers.internal.DefaultWo
+rkerExecutor$WorkItemExecution.waitForCom
+pletion(DefaultWorkerExecutor.java:287)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.lambda$waitForItemsAndGatherF
+ailures$2(DefaultAsyncWorkTracker.java:13
+0)
+	at org.gradle.internal.Factories$1.creat
+e(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withoutLocks(DefaultWorkerL
+easeService.java:335)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withoutLocks(DefaultWorkerL
+easeService.java:318)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withoutLock(DefaultWorkerLe
+aseService.java:323)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForItemsAndGatherFailures
+(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForItemsAndGatherFailures
+(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForAll(DefaultAsyncWorkTr
+acker.java:78)
+	at org.gradle.internal.work.DefaultAsync
+WorkTracker.waitForCompletion(DefaultAsyn
+cWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution$3.run(TaskExecution.java
+:252)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$1.execute(DefaultBu
+ildOperationRunner.java:30)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$1.execute(DefaultBu
+ildOperationRunner.java:27)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.run(DefaultBuildOpe
+rationRunner.java:48)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.executeAction(TaskExecut
+ion.java:229)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.executeActions(TaskExecu
+tion.java:212)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.executeWithPreviousOutpu
+tFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution.execute(TaskExecution.ja
+va:162)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.executeInternal(ExecuteStep.ja
+va:105)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.access$000(ExecuteStep.java:44
+)
+	at org.gradle.internal.execution.steps.E
+xecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.E
+xecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.E
+xecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.C
+ancelExecutionStep.execute(CancelExecutio
+nStep.java:42)
+	at org.gradle.internal.execution.steps.T
+imeoutStep.executeWithoutTimeout(TimeoutS
+tep.java:75)
+	at org.gradle.internal.execution.steps.T
+imeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.P
+reCreateOutputParentsStep.execute(PreCrea
+teOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.P
+reCreateOutputParentsStep.execute(PreCrea
+teOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.R
+emovePreviousOutputsStep.execute(RemovePr
+eviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.R
+emovePreviousOutputsStep.execute(RemovePr
+eviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.B
+roadcastChangingOutputsStep.execute(Broad
+castChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.B
+roadcastChangingOutputsStep.execute(Broad
+castChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.C
+aptureOutputsAfterExecutionStep.execute(C
+aptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.C
+aptureOutputsAfterExecutionStep.execute(C
+aptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.R
+esolveInputChangesStep.execute(ResolveInp
+utChangesStep.java:40)
+	at org.gradle.internal.execution.steps.R
+esolveInputChangesStep.execute(ResolveInp
+utChangesStep.java:29)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.executeWithoutCache(BuildCa
+cheStep.java:189)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.lambda$execute$1(BuildCache
+Step.java:75)
+	at org.gradle.internal.Either$Right.fold
+(Either.java:175)
+	at org.gradle.internal.execution.caching
+.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.execute(BuildCacheStep.java
+:73)
+	at org.gradle.internal.execution.steps.B
+uildCacheStep.execute(BuildCacheStep.java
+:48)
+	at org.gradle.internal.execution.steps.S
+toreExecutionStateStep.execute(StoreExecu
+tionStateStep.java:46)
+	at org.gradle.internal.execution.steps.S
+toreExecutionStateStep.execute(StoreExecu
+tionStateStep.java:35)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.executeBecause(SkipUpToDa
+teStep.java:75)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.lambda$execute$2(SkipUpTo
+DateStep.java:53)
+	at java.base/java.util.Optional.orElseGe
+t(Optional.java:364)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.execute(SkipUpToDateStep.
+java:53)
+	at org.gradle.internal.execution.steps.S
+kipUpToDateStep.execute(SkipUpToDateStep.
+java:35)
+	at org.gradle.internal.execution.steps.l
+egacy.MarkSnapshottingInputsFinishedStep.
+execute(MarkSnapshottingInputsFinishedSte
+p.java:37)
+	at org.gradle.internal.execution.steps.l
+egacy.MarkSnapshottingInputsFinishedStep.
+execute(MarkSnapshottingInputsFinishedSte
+p.java:27)
+	at org.gradle.internal.execution.steps.R
+esolveIncrementalCachingStateStep.execute
+Delegate(ResolveIncrementalCachingStateSt
+ep.java:49)
+	at org.gradle.internal.execution.steps.R
+esolveIncrementalCachingStateStep.execute
+Delegate(ResolveIncrementalCachingStateSt
+ep.java:27)
+	at org.gradle.internal.execution.steps.A
+bstractResolveCachingStateStep.execute(Ab
+stractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.A
+bstractResolveCachingStateStep.execute(Ab
+stractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.R
+esolveChangesStep.execute(ResolveChangesS
+tep.java:65)
+	at org.gradle.internal.execution.steps.R
+esolveChangesStep.execute(ResolveChangesS
+tep.java:36)
+	at org.gradle.internal.execution.steps.V
+alidateStep.execute(ValidateStep.java:107
+)
+	at org.gradle.internal.execution.steps.V
+alidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.A
+bstractCaptureStateBeforeExecutionStep.ex
+ecute(AbstractCaptureStateBeforeExecution
+Step.java:64)
+	at org.gradle.internal.execution.steps.A
+bstractCaptureStateBeforeExecutionStep.ex
+ecute(AbstractCaptureStateBeforeExecution
+Step.java:43)
+	at org.gradle.internal.execution.steps.A
+bstractSkipEmptyWorkStep.executeWithNonEm
+ptySources(AbstractSkipEmptyWorkStep.java
+:125)
+	at org.gradle.internal.execution.steps.A
+bstractSkipEmptyWorkStep.execute(Abstract
+SkipEmptyWorkStep.java:56)
+	at org.gradle.internal.execution.steps.A
+bstractSkipEmptyWorkStep.execute(Abstract
+SkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.l
+egacy.MarkSnapshottingInputsStartedStep.e
+xecute(MarkSnapshottingInputsStartedStep.
+java:38)
+	at org.gradle.internal.execution.steps.L
+oadPreviousExecutionStateStep.execute(Loa
+dPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.L
+oadPreviousExecutionStateStep.execute(Loa
+dPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.H
+andleStaleOutputsStep.execute(HandleStale
+OutputsStep.java:75)
+	at org.gradle.internal.execution.steps.H
+andleStaleOutputsStep.execute(HandleStale
+OutputsStep.java:41)
+	at org.gradle.internal.execution.steps.A
+ssignMutableWorkspaceStep.lambda$execute$
+0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.executi
+on.TaskExecution$4.withWorkspace(TaskExec
+ution.java:289)
+	at org.gradle.internal.execution.steps.A
+ssignMutableWorkspaceStep.execute(AssignM
+utableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.A
+ssignMutableWorkspaceStep.execute(AssignM
+utableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.C
+hoosePipelineStep.execute(ChoosePipelineS
+tep.java:40)
+	at org.gradle.internal.execution.steps.C
+hoosePipelineStep.execute(ChoosePipelineS
+tep.java:23)
+	at org.gradle.internal.execution.steps.E
+xecuteWorkBuildOperationFiringStep.lambda
+$execute$2(ExecuteWorkBuildOperationFirin
+gStep.java:67)
+	at java.base/java.util.Optional.orElseGe
+t(Optional.java:364)
+	at org.gradle.internal.execution.steps.E
+xecuteWorkBuildOperationFiringStep.execut
+e(ExecuteWorkBuildOperationFiringStep.jav
+a:67)
+	at org.gradle.internal.execution.steps.E
+xecuteWorkBuildOperationFiringStep.execut
+e(ExecuteWorkBuildOperationFiringStep.jav
+a:39)
+	at org.gradle.internal.execution.steps.I
+dentityCacheStep.execute(IdentityCacheSte
+p.java:46)
+	at org.gradle.internal.execution.steps.I
+dentityCacheStep.execute(IdentityCacheSte
+p.java:34)
+	at org.gradle.internal.execution.steps.I
+dentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.I
+dentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.De
+faultExecutionEngine$1.execute(DefaultExe
+cutionEngine.java:61)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.executeIfVa
+lid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.executi
+on.ExecuteActionsTaskExecuter.execute(Exe
+cuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.executi
+on.ProblemsTaskPathTrackingTaskExecuter.e
+xecute(ProblemsTaskPathTrackingTaskExecut
+er.java:40)
+	at org.gradle.api.internal.tasks.executi
+on.FinalizePropertiesTaskExecuter.execute
+(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.executi
+on.ResolveTaskExecutionModeExecuter.execu
+te(ResolveTaskExecutionModeExecuter.java:
+51)
+	at org.gradle.api.internal.tasks.executi
+on.SkipTaskWithNoActionsExecuter.execute(
+SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.executi
+on.SkipOnlyIfTaskExecuter.execute(SkipOnl
+yIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.executi
+on.CatchExceptionTaskExecuter.execute(Cat
+chExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.executeTask(
+EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter$1.call(EventFi
+ringTaskExecuter.java:52)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.api.internal.tasks.executi
+on.EventFiringTaskExecuter.execute(EventF
+iringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNo
+deExecutor.execute(LocalTaskNodeExecutor.
+java:42)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:331)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$InvokeNodeExecutorsAc
+tion.execute(DefaultTaskExecutionGraph.ja
+va:318)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.lambda$execute$0(DefaultTas
+kExecutionGraph.java:314)
+	at org.gradle.internal.operations.Curren
+tBuildOperationRef.with(CurrentBuildOpera
+tionRef.java:85)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:314)
+	at org.gradle.execution.taskgraph.Defaul
+tTaskExecutionGraph$BuildOperationAwareEx
+ecutionAction.execute(DefaultTaskExecutio
+nGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.execute(DefaultPl
+anExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlan
+Executor$ExecutorWorker.run(DefaultPlanEx
+ecutor.java:376)
+	at org.gradle.internal.concurrent.Execut
+orPolicy$CatchAndRecordFailures.onExecute
+(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.Abstra
+ctManagedExecutor$1.run(AbstractManagedEx
+ecutor.java:48)
+	at java.base/java.util.concurrent.Thread
+PoolExecutor.runWorker(ThreadPoolExecutor
+.java:1136)
+	at java.base/java.util.concurrent.Thread
+PoolExecutor$Worker.run(ThreadPoolExecuto
+r.java:635)
+	at java.base/java.lang.Thread.run(Thread
+.java:842)
+Caused by: java.lang.reflect.InvocationTa
+rgetException
+	at java.base/jdk.internal.reflect.Native
+MethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.Native
+MethodAccessorImpl.invoke(NativeMethodAcc
+essorImpl.java:77)
+	at java.base/jdk.internal.reflect.Delega
+tingMethodAccessorImpl.invoke(DelegatingM
+ethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.in
+voke(Method.java:568)
+	at org.jetbrains.kotlin.gradle.internal.
+KaptExecution.run(KaptWithoutKotlincTask.
+kt:320)
+	at org.jetbrains.kotlin.gradle.internal.
+KaptWithoutKotlincTask$KaptExecutionWorkA
+ction.execute(KaptWithoutKotlincTask.kt:2
+66)
+	at org.gradle.workers.internal.DefaultWo
+rkerServer.execute(DefaultWorkerServer.ja
+va:63)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1$1.create(NoIsolationWor
+kerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1$1.create(NoIsolationWor
+kerFactory.java:62)
+	at org.gradle.internal.classloader.Class
+LoaderUtils.executeInClassloader(ClassLoa
+derUtils.java:100)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1.lambda$execute$0(NoIsol
+ationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractW
+orker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractW
+orker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:210)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$CallableBuildOperat
+ionWorker.execute(DefaultBuildOperationRu
+nner.java:205)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:67)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner$2.execute(DefaultBu
+ildOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:167)
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+72 actionable tasks: 72 executed
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.execute(DefaultBuil
+dOperationRunner.java:60)
+	at org.gradle.internal.operations.Defaul
+tBuildOperationRunner.call(DefaultBuildOp
+erationRunner.java:54)
+	at org.gradle.workers.internal.AbstractW
+orker.executeWrappedInBuildOperation(Abst
+ractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolati
+onWorkerFactory$1.execute(NoIsolationWork
+erFactory.java:59)
+	at org.gradle.workers.internal.DefaultWo
+rkerExecutor.lambda$submitWork$0(DefaultW
+orkerExecutor.java:174)
+	at java.base/java.util.concurrent.Future
+Task.run(FutureTask.java:264)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.runE
+xecution(DefaultConditionalExecutionQueue
+.java:194)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.acce
+ss$700(DefaultConditionalExecutionQueue.j
+ava:127)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner$1.ru
+n(DefaultConditionalExecutionQueue.java:1
+69)
+	at org.gradle.internal.Factories$1.creat
+e(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.withLocks(DefaultWorkerLeas
+eService.java:263)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.runAsWorkerThread(DefaultWo
+rkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorke
+rLeaseService.runAsWorkerThread(DefaultWo
+rkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.runB
+atch(DefaultConditionalExecutionQueue.jav
+a:164)
+	at org.gradle.internal.work.DefaultCondi
+tionalExecutionQueue$ExecutionRunner.run(
+DefaultConditionalExecutionQueue.java:133
+)
+	at java.base/java.util.concurrent.Execut
+ors$RunnableAdapter.call(Executors.java:5
+39)
+	at java.base/java.util.concurrent.Future
+Task.run(FutureTask.java:264)
+	... 5 more
+Caused by: org.jetbrains.kotlin.kapt3.bas
+e.util.KaptBaseError: Error while annotat
+ion processing
+	at org.jetbrains.kotlin.kapt3.base.Annot
+ationProcessingKt.doAnnotationProcessing(
+annotationProcessing.kt:138)
+	at org.jetbrains.kotlin.kapt3.base.Annot
+ationProcessingKt.doAnnotationProcessing$
+default(annotationProcessing.kt:33)
+	at org.jetbrains.kotlin.kapt3.base.Kapt.
+kapt(Kapt.kt:47)
+	... 40 more
+
+=========================================
+=====================================
+
+BUILD FAILED in 1m 36s

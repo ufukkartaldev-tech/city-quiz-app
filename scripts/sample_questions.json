@@ -1,0 +1,117 @@
+[
+    {
+        "id": "q_level20_002",
+        "questionText": "Dünyanın en büyük okyanusu hangisidir?",
+        "optionA": "Atlas Okyanusu",
+        "optionB": "Hint Okyanusu",
+        "optionC": "Pasifik Okyanusu",
+        "optionD": "Arktik Okyanusu",
+        "correctAnswer": "C",
+        "imageName": "",
+        "level": 20,
+        "category": "GEOGRAPHY",
+        "difficulty": "EASY",
+        "explanation": "Pasifik Okyanusu, dünya yüzeyinin yaklaşık %46'sını kaplayan en büyük okyanusdur.",
+        "tags": [
+            "okyanus",
+            "coğrafya",
+            "dünya"
+        ],
+        "points": 10,
+        "timeLimit": 30,
+        "isVerified": true,
+        "authorId": "system"
+    },
+    {
+        "id": "q_level20_003",
+        "questionText": "Python programlama dilini kim geliştirmiştir?",
+        "optionA": "Guido van Rossum",
+        "optionB": "James Gosling",
+        "optionC": "Dennis Ritchie",
+        "optionD": "Bjarne Stroustrup",
+        "correctAnswer": "A",
+        "imageName": "",
+        "level": 20,
+        "category": "SCIENCE",
+        "difficulty": "MEDIUM",
+        "explanation": "Python, Guido van Rossum tarafından 1991 yılında geliştirilmiştir.",
+        "tags": [
+            "python",
+            "programlama",
+            "bilim"
+        ],
+        "points": 15,
+        "timeLimit": 30,
+        "isVerified": true,
+        "authorId": "system"
+    },
+    {
+        "id": "q_level21_002",
+        "questionText": "Mona Lisa tablosunu kim yapmıştır?",
+        "optionA": "Michelangelo",
+        "optionB": "Leonardo da Vinci",
+        "optionC": "Raphael",
+        "optionD": "Donatello",
+        "correctAnswer": "B",
+        "imageName": "",
+        "level": 21,
+        "category": "ART",
+        "difficulty": "EASY",
+        "explanation": "Mona Lisa, Leonardo da Vinci'nin en ünlü eseridir ve Louvre Müzesi'nde sergilenmektedir.",
+        "tags": [
+            "sanat",
+            "resim",
+            "rönesans"
+        ],
+        "points": 10,
+        "timeLimit": 30,
+        "isVerified": true,
+        "authorId": "system"
+    },
+    {
+        "id": "q_level21_003",
+        "questionText": "İlk modern Olimpiyat Oyunları hangi yılda düzenlenmiştir?",
+        "optionA": "1892",
+        "optionB": "1896",
+        "optionC": "1900",
+        "optionD": "1904",
+        "correctAnswer": "B",
+        "imageName": "",
+        "level": 21,
+        "category": "SPORTS",
+        "difficulty": "MEDIUM",
+        "explanation": "İlk modern Olimpiyat Oyunları 1896 yılında Atina'da düzenlenmiştir.",
+        "tags": [
+            "olimpiyat",
+            "spor",
+            "tarih"
+        ],
+        "points": 15,
+        "timeLimit": 30,
+        "isVerified": true,
+        "authorId": "system"
+    },
+    {
+        "id": "q_level22_001",
+        "questionText": "DNA'nın çift sarmal yapısını kim keşfetmiştir?",
+        "optionA": "Gregor Mendel",
+        "optionB": "Charles Darwin",
+        "optionC": "Watson ve Crick",
+        "optionD": "Louis Pasteur",
+        "correctAnswer": "C",
+        "imageName": "",
+        "level": 22,
+        "category": "SCIENCE",
+        "difficulty": "HARD",
+        "explanation": "James Watson ve Francis Crick, 1953 yılında DNA'nın çift sarmal yapısını keşfetmişlerdir.",
+        "tags": [
+            "dna",
+            "bilim",
+            "genetik"
+        ],
+        "points": 20,
+        "timeLimit": 30,
+        "isVerified": true,
+        "authorId": "system"
+    }
+]

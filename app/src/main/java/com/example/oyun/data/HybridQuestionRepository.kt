@@ -40,7 +40,7 @@ class HybridQuestionRepository @Inject constructor(
     }
     
     private val coroutineScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
-    private var jsonQuestions: List<Question> = emptyList()
+    private var jsonQuestions: List<HybridQuestion> = emptyList()
     private var isInitialized = false
     
     // ============================================
@@ -80,7 +80,7 @@ class HybridQuestionRepository @Inject constructor(
         try {
             val inputStream = context.assets.open("questions.json")
             val reader = InputStreamReader(inputStream)
-            val type = object : TypeToken<List<Question>>() {}.type
+            val type = object : TypeToken<List<HybridQuestion>>() {}.type
             jsonQuestions = gson.fromJson(reader, type)
             reader.close()
         } catch (e: Exception) {
@@ -132,7 +132,7 @@ class HybridQuestionRepository @Inject constructor(
                             category = fq.category,
                             difficulty = fq.difficulty,
                             explanation = fq.explanation ?: "",
-                            tags = gson.toJson(fq.tags ?: emptyList()),
+                            tags = gson.toJson(fq.tags ?: emptyList<String>()),
                             points = fq.points,
                             timeLimit = fq.timeLimit,
                             isVerified = fq.isVerified,
@@ -176,7 +176,7 @@ class HybridQuestionRepository @Inject constructor(
      * Belirli bir level için soruları getirir
      * Öncelik: Room (Firestore cache) > JSON
      */
-    suspend fun getQuestionsForLevel(level: Int): List<Question> {
+    suspend fun getQuestionsForLevel(level: Int): List<HybridQuestion> {
         return withContext(Dispatchers.IO) {
             try {
                 // 1. Önce Room'dan kontrol et
@@ -184,7 +184,7 @@ class HybridQuestionRepository @Inject constructor(
                 
                 if (cachedQuestions.isNotEmpty()) {
                     Log.d(TAG, "📦 Level $level için ${cachedQuestions.size} soru Room'dan alındı")
-                    return@withContext cachedQuestions.map { it.toQuestion() }
+                    return@withContext cachedQuestions.map { it.toHybridQuestion() }
                 }
                 
                 // 2. Room'da yoksa JSON'dan al
@@ -209,11 +209,11 @@ class HybridQuestionRepository @Inject constructor(
     /**
      * Belirli bir level için soruları Flow olarak döner (reactive)
      */
-    fun getQuestionsForLevelFlow(level: Int): Flow<List<Question>> {
+    fun getQuestionsForLevelFlow(level: Int): Flow<List<HybridQuestion>> {
         return cachedQuestionDao.getQuestionsByLevelFlow(level)
             .map { cachedQuestions ->
                 if (cachedQuestions.isNotEmpty()) {
-                    cachedQuestions.map { it.toQuestion() }
+                    cachedQuestions.map { it.toHybridQuestion() }
                 } else {
                     jsonQuestions.filter { it.level == level }
                 }
@@ -223,13 +223,13 @@ class HybridQuestionRepository @Inject constructor(
     /**
      * Tüm soruları getirir (önce Room, sonra JSON)
      */
-    suspend fun getAllQuestions(): List<Question> {
+    suspend fun getAllQuestions(): List<HybridQuestion> {
         return withContext(Dispatchers.IO) {
             val cachedQuestions = cachedQuestionDao.getAllQuestions()
             val cachedIds = cachedQuestions.map { it.id }.toSet()
             
             // Room'daki soruları al
-            val allQuestions = cachedQuestions.map { it.toQuestion() }.toMutableList()
+            val allQuestions = cachedQuestions.map { it.toHybridQuestion() }.toMutableList()
             
             // JSON'dan Room'da olmayanları ekle
             jsonQuestions.forEach { jsonQ ->
@@ -245,12 +245,12 @@ class HybridQuestionRepository @Inject constructor(
     /**
      * Belirli bir kategorideki soruları getirir
      */
-    suspend fun getQuestionsByCategory(category: String): List<Question> {
+    suspend fun getQuestionsByCategory(category: String): List<HybridQuestion> {
         return withContext(Dispatchers.IO) {
             val cachedQuestions = cachedQuestionDao.getQuestionsByCategory(category)
             
             if (cachedQuestions.isNotEmpty()) {
-                cachedQuestions.map { it.toQuestion() }
+                cachedQuestions.map { it.toHybridQuestion() }
             } else {
                 jsonQuestions.filter { it.category == category }
             }
@@ -360,10 +360,27 @@ data class QuestionStatistics(
 )
 
 /**
- * CachedQuestion'ı Question'a dönüştürür
+ * Hybrid Repository için Question modeli
+ * İsim çakışmasını önlemek için HybridQuestion olarak adlandırıldı
  */
-fun CachedQuestion.toQuestion(): Question {
-    return Question(
+data class HybridQuestion(
+    val id: Int,
+    val questionText: String,
+    val optionA: String,
+    val optionB: String,
+    val optionC: String,
+    val optionD: String,
+    val correctAnswer: String,
+    val imageName: String,
+    val level: Int,
+    val category: String
+)
+
+/**
+ * CachedQuestion'ı HybridQuestion'a dönüştürür
+ */
+fun CachedQuestion.toHybridQuestion(): HybridQuestion {
+    return HybridQuestion(
         id = id,
         questionText = questionText,
         optionA = optionA,

@@ -1,0 +1,281 @@
+﻿> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:injectCrashlyticsMappingFileIdDebug UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsDebugKotlin UP-TO-DATE
+> Task :app:kaptDebugKotlin UP-TO-DATE
+> Task :app:compileDebugKotlin
+.\gradlew.bat : e: file:///C:/Users/90538
+/AndroidStudioProjects/oyun/app/src/main/
+java/com/example/oyun/data/DataModels.kt:
+4:12 Redeclaration: Question
+At line:1 char:1
++ .\gradlew.bat compileDebugKotlin 2>&1 |
+ Out-File -FilePath hata_son.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecifi 
+   ed: (e: file:///C:/U...ation: Questi  
+  on:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeComm 
+   andError
+ 
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:19
+1:71 Unresolved reference: level
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:21
+8:47 Unresolved reference: level
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:23
+6:27 Unresolved reference: id
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:24
+1:35 Type mismatch: inferred type is Unit
+ but Comparable<TypeVariable(R)> was expe
+cted
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:24
+1:35 Type mismatch: inferred type is Unit
+ but Comparable<Unit> was expected
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:24
+1:40 Unresolved reference: id
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:25
+5:43 Unresolved reference. None of the fo
+llowing candidates is applicable because 
+of receiver type mismatch: 
+public val Char.category: CharCategory de
+fined in kotlin.text
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:29
+4:36 Unresolved reference: level
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:36
+5:12 Redeclaration: Question
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:38
+3:9 Cannot find a parameter with this nam
+e: id
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:38
+5:9 Cannot find a parameter with this nam
+e: optionA
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:38
+6:9 Cannot find a parameter with this nam
+e: optionB
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:38
+7:9 Cannot find a parameter with this nam
+e: optionC
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:38
+8:9 Cannot find a parameter with this nam
+e: optionD
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:38
+9:9 Cannot find a parameter with this nam
+e: correctAnswer
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:39
+0:9 Cannot find a parameter with this nam
+e: imageName
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:39
+1:9 Cannot find a parameter with this nam
+e: level
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:39
+2:9 Cannot find a parameter with this nam
+e: category
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:39
+2:9 No value passed for parameter 'option
+s'
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/data/HybridQuestionRepository.kt:39
+2:9 No value passed for parameter 'correc
+tAnswerIndex'
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:49
+:55 Unresolved reference. None of the fol
+lowing candidates is applicable because o
+f receiver type mismatch: 
+public val Char.category: CharCategory de
+fined in kotlin.text
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:52
+:40 Type mismatch: inferred type is Map<U
+nit, Int> but Map<String, Int> was expect
+ed
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:62
+:41 Type inference failed. The value of t
+he type parameter K should be mentioned i
+n input types (argument types, receiver t
+ype or expected type). Try to specify it 
+explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:70
+:41 Type inference failed. The value of t
+he type parameter K should be mentioned i
+n input types (argument types, receiver t
+ype or expected type). Try to specify it 
+explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:78
+:41 Type inference failed. The value of t
+he type parameter K should be mentioned i
+n input types (argument types, receiver t
+ype or expected type). Try to specify it 
+explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:86
+:41 Type inference failed. The value of t
+he type parameter K should be mentioned i
+n input types (argument types, receiver t
+ype or expected type). Try to specify it 
+explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:94
+:41 Type inference failed. The value of t
+he type parameter K should be mentioned i
+n input types (argument types, receiver t
+ype or expected type). Try to specify it 
+explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:10
+2:41 Type inference failed. The value of 
+the type parameter K should be mentioned 
+in input types (argument types, receiver 
+type or expected type). Try to specify it
+ explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:10
+3:36 Type inference failed. The value of 
+the type parameter K should be mentioned 
+in input types (argument types, receiver 
+type or expected type). Try to specify it
+ explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:11
+2:41 Type inference failed. The value of 
+the type parameter K should be mentioned 
+in input types (argument types, receiver 
+type or expected type). Try to specify it
+ explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/category/CategoryViewModel.kt:11
+3:36 Type inference failed. The value of 
+the type parameter K should be mentioned 
+in input types (argument types, receiver 
+type or expected type). Try to specify it
+ explicitly.
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/onboarding/TutorialActivity.kt:2
+9:35 Unresolved reference: TutorialPagerA
+dapter
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/onboarding/TutorialActivity.kt:5
+6:35 Unresolved reference: onboarding_mul
+tiplayer
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/onboarding/TutorialActivity.kt:6
+1:35 Unresolved reference: onboarding_ach
+ievements
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/onboarding/TutorialActivity.kt:6
+6:35 Unresolved reference: onboarding_sta
+rt
+e: file:///C:/Users/90538/AndroidStudioPr
+ojects/oyun/app/src/main/java/com/example
+/oyun/ui/onboarding/TutorialActivity.kt:8
+0:19 Unresolved reference: TutorialPagerA
+dapter
+
+> Task :app:compileDebugKotlin FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/90538/AndroidStudioProjects/oyun/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDe
+bugKotlin'.
+> A failure occurred while executing org.
+jetbrains.kotlin.compilerRunner.GradleCom
+pilerRunnerWithWorkers$GradleKotlinCompil
+erWorkAction
+   > Compilation error. See log for more 
+details
+
+* Try:
+> Run with --stacktrace option to get the
+ stack trace.
+> Run with --info or --debug option to ge
+t more log output.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.or
+g.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1m 25s
+22 actionable tasks: 2 executed, 20 up-to-date

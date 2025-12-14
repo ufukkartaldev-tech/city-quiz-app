@@ -125,7 +125,7 @@ def generate_with_gemini(category: str, difficulty: str, level: int, count: int 
         return []
     
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-pro')  # Latest model
     
     prompt = QUESTION_GENERATION_PROMPT.format(
         count=count,

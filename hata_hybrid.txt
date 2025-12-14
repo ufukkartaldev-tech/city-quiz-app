@@ -1,0 +1,792 @@
+﻿
+> Kotlin source files: C:\Users\90538\And
+roidStudioProjects\oyun\app\src\main\java
+\com\example\oyun\data\AppDatabase.kt, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\src\main\java\com\example\oyun\data\Da
+taModels.kt, C:\Users\90538\AndroidStudio
+Projects\oyun\app\src\main\java\com\examp
+le\oyun\data\ExtendedQuestionModels.kt, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\src\main\java\com\example\oyun\data\H
+ighScore.kt, C:\Users\90538\AndroidStudio
+Projects\oyun\app\src\main\java\com\examp
+le\oyun\data\HighScoreDao.kt, C:\Users\90
+538\AndroidStudioProjects\oyun\app\src\ma
+in\java\com\example\oyun\data\HybridQuest
+ionRepository.kt, C:\Users\90538\AndroidS
+tudioProjects\oyun\app\src\main\java\com\
+example\oyun\data\local\CachedQuestionDao
+.kt, C:\Users\90538\AndroidStudioProjects
+\oyun\app\src\main\java\com\example\oyun\
+data\Profile.kt, C:\Users\90538\AndroidSt
+udioProjects\oyun\app\src\main\java\com\e
+xample\oyun\data\QuestionManager.kt, C:\U
+sers\90538\AndroidStudioProjects\oyun\app
+\src\main\java\com\example\oyun\data\Ques
+tionRepository.kt, C:\Users\90538\Android
+StudioProjects\oyun\app\src\main\java\com
+\example\oyun\data\remote\AuthRepository.
+kt, C:\Users\90538\AndroidStudioProjects\
+oyun\app\src\main\java\com\example\oyun\d
+ata\remote\FirebaseSyncService.kt, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\s
+rc\main\java\com\example\oyun\data\remote
+\FriendsRepository.kt, C:\Users\90538\And
+roidStudioProjects\oyun\app\src\main\java
+\com\example\oyun\data\remote\GoogleSignI
+nHelper.kt, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\src\main\java\com\exampl
+e\oyun\data\remote\HighScoreRemoteReposit
+ory.kt, C:\Users\90538\AndroidStudioProje
+cts\oyun\app\src\main\java\com\example\oy
+un\di\AppModule.kt, C:\Users\90538\Androi
+dStudioProjects\oyun\app\src\main\java\co
+m\example\oyun\domain\GameState.kt, C:\Us
+ers\90538\AndroidStudioProjects\oyun\app\
+src\main\java\com\example\oyun\managers\A
+chievementManager.kt, C:\Users\90538\Andr
+oidStudioProjects\oyun\app\src\main\java\
+com\example\oyun\managers\AdManager.kt, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\src\main\java\com\example\oyun\manage
+rs\DailyTaskManager.kt, C:\Users\90538\An
+droidStudioProjects\oyun\app\src\main\jav
+a\com\example\oyun\managers\HighScoreSync
+Manager.kt, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\src\main\java\com\exampl
+e\oyun\managers\SoundManager.kt, C:\Users
+\90538\AndroidStudioProjects\oyun\app\src
+\main\java\com\example\oyun\managers\Time
+Manager.kt, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\src\main\java\com\exampl
+e\oyun\managers\UIManager.kt, C:\Users\90
+538\AndroidStudioProjects\oyun\app\src\ma
+in\java\com\example\oyun\notifications\Qu
+izFirebaseMessagingService.kt, C:\Users\9
+0538\AndroidStudioProjects\oyun\app\src\m
+ain\java\com\example\oyun\QuizApplication
+.kt, C:\Users\90538\AndroidStudioProjects
+\oyun\app\src\main\java\com\example\oyun\
+ui\AchievementAdapter.kt, C:\Users\90538\
+AndroidStudioProjects\oyun\app\src\main\j
+ava\com\example\oyun\ui\AchievementsActiv
+ity.kt, C:\Users\90538\AndroidStudioProje
+cts\oyun\app\src\main\java\com\example\oy
+un\ui\AuthActivity.kt, C:\Users\90538\And
+roidStudioProjects\oyun\app\src\main\java
+\com\example\oyun\ui\category\CategoryAda
+pter.kt, C:\Users\90538\AndroidStudioProj
+ects\oyun\app\src\main\java\com\example\o
+yun\ui\category\CategorySelectionActivity
+.kt, C:\Users\90538\AndroidStudioProjects
+\oyun\app\src\main\java\com\example\oyun\
+ui\category\CategoryViewModel.kt, C:\User
+s\90538\AndroidStudioProjects\oyun\app\sr
+c\main\java\com\example\oyun\ui\DailyTask
+Adapter.kt, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\src\main\java\com\exampl
+e\oyun\ui\DailyTasksActivity.kt, C:\Users
+\90538\AndroidStudioProjects\oyun\app\src
+\main\java\com\example\oyun\ui\friends\Fr
+iendsActivity.kt, C:\Users\90538\AndroidS
+tudioProjects\oyun\app\src\main\java\com\
+example\oyun\ui\friends\FriendsAdapter.kt
+, C:\Users\90538\AndroidStudioProjects\oy
+un\app\src\main\java\com\example\oyun\ui\
+game\AnswerHandler.kt, C:\Users\90538\And
+roidStudioProjects\oyun\app\src\main\java
+\com\example\oyun\ui\game\GameStateObserv
+er.kt, C:\Users\90538\AndroidStudioProjec
+ts\oyun\app\src\main\java\com\example\oyu
+n\ui\game\GameViewModel.kt, C:\Users\9053
+8\AndroidStudioProjects\oyun\app\src\main
+\java\com\example\oyun\ui\game\JokerHandl
+er.kt, C:\Users\90538\AndroidStudioProjec
+ts\oyun\app\src\main\java\com\example\oyu
+n\ui\GameActivity.kt, C:\Users\90538\Andr
+oidStudioProjects\oyun\app\src\main\java\
+com\example\oyun\ui\GameOverActivity.kt, 
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\src\main\java\com\example\oyun\ui\Hi
+ghScoreActivity.kt, C:\Users\90538\Androi
+dStudioProjects\oyun\app\src\main\java\co
+m\example\oyun\ui\HighScoreAdapter.kt, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\src\main\java\com\example\oyun\ui\Joke
+rModeActivity.kt, C:\Users\90538\AndroidS
+tudioProjects\oyun\app\src\main\java\com\
+example\oyun\ui\JokerRewardActivity.kt, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\src\main\java\com\example\oyun\ui\Lev
+elSelectionActivity.kt, C:\Users\90538\An
+droidStudioProjects\oyun\app\src\main\jav
+a\com\example\oyun\ui\main\ConsentManager
+.kt, C:\Users\90538\AndroidStudioProjects
+\oyun\app\src\main\java\com\example\oyun\
+ui\main\ProfileManager.kt, C:\Users\90538
+\AndroidStudioProjects\oyun\app\src\main\
+java\com\example\oyun\ui\main\RewardedAdH
+andler.kt, C:\Users\90538\AndroidStudioPr
+ojects\oyun\app\src\main\java\com\example
+\oyun\ui\MainActivity.kt, C:\Users\90538\
+AndroidStudioProjects\oyun\app\src\main\j
+ava\com\example\oyun\ui\multiplayer\GameO
+verDialogManager.kt, C:\Users\90538\Andro
+idStudioProjects\oyun\app\src\main\java\c
+om\example\oyun\ui\multiplayer\Multiplaye
+rQuestions.kt, C:\Users\90538\AndroidStud
+ioProjects\oyun\app\src\main\java\com\exa
+mple\oyun\ui\multiplayer\MultiplayerTimer
+.kt, C:\Users\90538\AndroidStudioProjects
+\oyun\app\src\main\java\com\example\oyun\
+ui\multiplayer\MultiplayerUIManager.kt, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\src\main\java\com\example\oyun\ui\mul
+tiplayer\RoomManager.kt, C:\Users\90538\A
+ndroidStudioProjects\oyun\app\src\main\ja
+va\com\example\oyun\ui\MultiplayerGameAct
+ivity.kt, C:\Users\90538\AndroidStudioPro
+jects\oyun\app\src\main\java\com\example\
+oyun\ui\MultiplayerMenuActivity.kt, C:\Us
+ers\90538\AndroidStudioProjects\oyun\app\
+src\main\java\com\example\oyun\ui\onboard
+ing\TutorialActivity.kt, C:\Users\90538\A
+ndroidStudioProjects\oyun\app\src\main\ja
+va\com\example\oyun\ui\OnboardingActivity
+.kt, C:\Users\90538\AndroidStudioProjects
+\oyun\app\src\main\java\com\example\oyun\
+ui\OnboardingAdapter.kt, C:\Users\90538\A
+ndroidStudioProjects\oyun\app\src\main\ja
+va\com\example\oyun\ui\PauseDialog.kt, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\src\main\java\com\example\oyun\ui\Priv
+acyPolicyActivity.kt, C:\Users\90538\Andr
+oidStudioProjects\oyun\app\src\main\java\
+com\example\oyun\ui\ProfileAdapter.kt, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\src\main\java\com\example\oyun\ui\Prof
+ileSelectionActivity.kt, C:\Users\90538\A
+ndroidStudioProjects\oyun\app\src\main\ja
+va\com\example\oyun\ui\SettingsActivity.k
+t, C:\Users\90538\AndroidStudioProjects\o
+yun\app\src\main\java\com\example\oyun\ut
+ils\ErrorDialogManager.kt, C:\Users\90538
+\AndroidStudioProjects\oyun\app\src\main\
+java\com\example\oyun\utils\FeedbackManag
+er.kt, C:\Users\90538\AndroidStudioProjec
+ts\oyun\app\src\main\java\com\example\oyu
+n\utils\LoadingDialogManager.kt, C:\Users
+\90538\AndroidStudioProjects\oyun\app\src
+\main\java\com\example\oyun\utils\Network
+Utils.kt, C:\Users\90538\AndroidStudioPro
+jects\oyun\app\src\main\java\com\example\
+oyun\utils\ViewExtensions.kt
+  Java source files: C:\Users\90538\Andro
+idStudioProjects\oyun\app\build\generated
+\source\buildConfig\debug\com\example\oyu
+n\BuildConfig.java, C:\Users\90538\Androi
+dStudioProjects\oyun\app\build\generated\
+data_binding_base_class_source_out\debug\
+out\com\example\oyun\databinding\Activity
+AchievementsBinding.java, C:\Users\90538\
+AndroidStudioProjects\oyun\app\build\gene
+rated\data_binding_base_class_source_out\
+debug\out\com\example\oyun\databinding\Ac
+tivityAuthBinding.java, C:\Users\90538\An
+droidStudioProjects\oyun\app\build\genera
+ted\data_binding_base_class_source_out\de
+bug\out\com\example\oyun\databinding\Acti
+vityCategorySelectionBinding.java, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\b
+uild\generated\data_binding_base_class_so
+urce_out\debug\out\com\example\oyun\datab
+inding\ActivityDailyTasksBinding.java, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\build\generated\data_binding_base_clas
+s_source_out\debug\out\com\example\oyun\d
+atabinding\ActivityFriendsBinding.java, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\build\generated\data_binding_base_cla
+ss_source_out\debug\out\com\example\oyun\
+databinding\ActivityGameBinding.java, C:\
+Users\90538\AndroidStudioProjects\oyun\ap
+p\build\generated\data_binding_base_class
+_source_out\debug\out\com\example\oyun\da
+tabinding\ActivityGameOverBinding.java, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\build\generated\data_binding_base_cla
+ss_source_out\debug\out\com\example\oyun\
+databinding\ActivityHighScoreBinding.java
+, C:\Users\90538\AndroidStudioProjects\oy
+un\app\build\generated\data_binding_base_
+class_source_out\debug\out\com\example\oy
+un\databinding\ActivityJokerModeBinding.j
+ava, C:\Users\90538\AndroidStudioProjects
+\oyun\app\build\generated\data_binding_ba
+se_class_source_out\debug\out\com\example
+\oyun\databinding\ActivityJokerRewardBind
+ing.java, C:\Users\90538\AndroidStudioPro
+jects\oyun\app\build\generated\data_bindi
+ng_base_class_source_out\debug\out\com\ex
+ample\oyun\databinding\ActivityLevelSelec
+tionBinding.java, C:\Users\90538\AndroidS
+tudioProjects\oyun\app\build\generated\da
+ta_binding_base_class_source_out\debug\ou
+t\com\example\oyun\databinding\ActivityMa
+inBinding.java, C:\Users\90538\AndroidStu
+dioProjects\oyun\app\build\generated\data
+_binding_base_class_source_out\debug\out\
+com\example\oyun\databinding\ActivityMult
+iplayerGameBinding.java, C:\Users\90538\A
+ndroidStudioProjects\oyun\app\build\gener
+ated\data_binding_base_class_source_out\d
+ebug\out\com\example\oyun\databinding\Act
+ivityMultiplayerMenuBinding.java, C:\User
+s\90538\AndroidStudioProjects\oyun\app\bu
+ild\generated\data_binding_base_class_sou
+rce_out\debug\out\com\example\oyun\databi
+nding\ActivityOnboardingBinding.java, C:\
+Users\90538\AndroidStudioProjects\oyun\ap
+p\build\generated\data_binding_base_class
+_source_out\debug\out\com\example\oyun\da
+tabinding\ActivityPrivacyPolicyBinding.ja
+va, C:\Users\90538\AndroidStudioProjects\
+oyun\app\build\generated\data_binding_bas
+e_class_source_out\debug\out\com\example\
+oyun\databinding\ActivityProfileSelection
+Binding.java, C:\Users\90538\AndroidStudi
+oProjects\oyun\app\build\generated\data_b
+inding_base_class_source_out\debug\out\co
+m\example\oyun\databinding\ActivitySettin
+gsBinding.java, C:\Users\90538\AndroidStu
+dioProjects\oyun\app\build\generated\data
+_binding_base_class_source_out\debug\out\
+com\example\oyun\databinding\DialogLoadin
+gBinding.java, C:\Users\90538\AndroidStud
+ioProjects\oyun\app\build\generated\data_
+binding_base_class_source_out\debug\out\c
+om\example\oyun\databinding\DialogPauseBi
+nding.java, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\build\generated\data_bin
+ding_base_class_source_out\debug\out\com\
+example\oyun\databinding\ItemAchievementB
+inding.java, C:\Users\90538\AndroidStudio
+Projects\oyun\app\build\generated\data_bi
+nding_base_class_source_out\debug\out\com
+\example\oyun\databinding\ItemCategoryBin
+ding.java, C:\Users\90538\AndroidStudioPr
+ojects\oyun\app\build\generated\data_bind
+ing_base_class_source_out\debug\out\com\e
+xample\oyun\databinding\ItemDailyTaskBind
+ing.java, C:\Users\90538\AndroidStudioPro
+jects\oyun\app\build\generated\data_bindi
+ng_base_class_source_out\debug\out\com\ex
+ample\oyun\databinding\ItemFriendBinding.
+java, C:\Users\90538\AndroidStudioProject
+s\oyun\app\build\generated\data_binding_b
+ase_class_source_out\debug\out\com\exampl
+e\oyun\databinding\ItemHighScoreBinding.j
+ava, C:\Users\90538\AndroidStudioProjects
+\oyun\app\build\generated\data_binding_ba
+se_class_source_out\debug\out\com\example
+\oyun\databinding\ItemOnboardingSlideBind
+ing.java, C:\Users\90538\AndroidStudioPro
+jects\oyun\app\build\generated\data_bindi
+ng_base_class_source_out\debug\out\com\ex
+ample\oyun\databinding\ItemProfileBinding
+.java, C:\Users\90538\AndroidStudioProjec
+ts\oyun\app\build\generated\source\kapt\d
+ebug\com\example\oyun\data\AppDatabase_Im
+pl.java, C:\Users\90538\AndroidStudioProj
+ects\oyun\app\build\generated\source\kapt
+\debug\com\example\oyun\data\HighScoreDao
+_Impl.java, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\build\generated\source\k
+apt\debug\com\example\oyun\data\HybridQue
+stionRepository_Factory.java, C:\Users\90
+538\AndroidStudioProjects\oyun\app\build\
+generated\source\kapt\debug\com\example\o
+yun\data\local\CachedQuestionDao_Impl.jav
+a, C:\Users\90538\AndroidStudioProjects\o
+yun\app\build\generated\source\kapt\debug
+\com\example\oyun\data\QuestionManager_Fa
+ctory.java, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\build\generated\source\k
+apt\debug\com\example\oyun\data\QuestionR
+epository_Factory.java, C:\Users\90538\An
+droidStudioProjects\oyun\app\build\genera
+ted\source\kapt\debug\com\example\oyun\da
+ta\remote\AuthRepository_Factory.java, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\build\generated\source\kapt\debug\com\
+example\oyun\data\remote\FirebaseSyncServ
+ice_Factory.java, C:\Users\90538\AndroidS
+tudioProjects\oyun\app\build\generated\so
+urce\kapt\debug\com\example\oyun\data\rem
+ote\FriendsRepository_Factory.java, C:\Us
+ers\90538\AndroidStudioProjects\oyun\app\
+build\generated\source\kapt\debug\com\exa
+mple\oyun\data\remote\GoogleSignInHelper_
+Factory.java, C:\Users\90538\AndroidStudi
+oProjects\oyun\app\build\generated\source
+\kapt\debug\com\example\oyun\data\remote\
+HighScoreRemoteRepository_Factory.java, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\build\generated\source\kapt\debug\com
+\example\oyun\di\AppModule_ProvideAdManag
+erFactory.java, C:\Users\90538\AndroidStu
+dioProjects\oyun\app\build\generated\sour
+ce\kapt\debug\com\example\oyun\di\AppModu
+le_ProvideAuthRepositoryFactory.java, C:\
+Users\90538\AndroidStudioProjects\oyun\ap
+p\build\generated\source\kapt\debug\com\e
+xample\oyun\di\AppModule_ProvideCachedQue
+stionDaoFactory.java, C:\Users\90538\Andr
+oidStudioProjects\oyun\app\build\generate
+d\source\kapt\debug\com\example\oyun\di\A
+ppModule_ProvideDatabaseFactory.java, C:\
+Users\90538\AndroidStudioProjects\oyun\ap
+p\build\generated\source\kapt\debug\com\e
+xample\oyun\di\AppModule_ProvideFirebaseA
+uthFactory.java, C:\Users\90538\AndroidSt
+udioProjects\oyun\app\build\generated\sou
+rce\kapt\debug\com\example\oyun\di\AppMod
+ule_ProvideFirebaseFirestoreFactory.java,
+ C:\Users\90538\AndroidStudioProjects\oyu
+n\app\build\generated\source\kapt\debug\c
+om\example\oyun\di\AppModule_ProvideFireb
+aseMessagingFactory.java, C:\Users\90538\
+AndroidStudioProjects\oyun\app\build\gene
+rated\source\kapt\debug\com\example\oyun\
+di\AppModule_ProvideFirebaseSyncServiceFa
+ctory.java, C:\Users\90538\AndroidStudioP
+rojects\oyun\app\build\generated\source\k
+apt\debug\com\example\oyun\di\AppModule_P
+rovideFriendsRepositoryFactory.java, C:\U
+sers\90538\AndroidStudioProjects\oyun\app
+\build\generated\source\kapt\debug\com\ex
+ample\oyun\di\AppModule_ProvideGoogleSign
+InHelperFactory.java, C:\Users\90538\Andr
+oidStudioProjects\oyun\app\build\generate
+d\source\kapt\debug\com\example\oyun\di\A
+ppModule_ProvideGsonFactory.java, C:\User
+s\90538\AndroidStudioProjects\oyun\app\bu
+ild\generated\source\kapt\debug\com\examp
+le\oyun\di\AppModule_ProvideHighScoreDaoF
+actory.java, C:\Users\90538\AndroidStudio
+Projects\oyun\app\build\generated\source\
+kapt\debug\com\example\oyun\di\AppModule_
+ProvideHighScoreRemoteRepositoryFactory.j
+ava, C:\Users\90538\AndroidStudioProjects
+\oyun\app\build\generated\source\kapt\deb
+ug\com\example\oyun\di\AppModule_ProvideH
+ybridQuestionRepositoryFactory.java, C:\U
+sers\90538\AndroidStudioProjects\oyun\app
+\build\generated\source\kapt\debug\com\ex
+ample\oyun\di\AppModule_ProvideNotificati
+onManagerFactory.java, C:\Users\90538\And
+roidStudioProjects\oyun\app\build\generat
+ed\source\kapt\debug\com\example\oyun\di\
+AppModule_ProvideSharedPreferencesFactory
+.java, C:\Users\90538\AndroidStudioProjec
+ts\oyun\app\build\generated\source\kapt\d
+ebug\com\example\oyun\di\AppModule_Provid
+eSoundManagerFactory.java, C:\Users\90538
+\AndroidStudioProjects\oyun\app\build\gen
+erated\source\kapt\debug\com\example\oyun
+\managers\AchievementManager_Factory.java
+, C:\Users\90538\AndroidStudioProjects\oy
+un\app\build\generated\source\kapt\debug\
+com\example\oyun\managers\AdManager_Facto
+ry.java, C:\Users\90538\AndroidStudioProj
+ects\oyun\app\build\generated\source\kapt
+\debug\com\example\oyun\managers\DailyTas
+kManager_Factory.java, C:\Users\90538\And
+roidStudioProjects\oyun\app\build\generat
+ed\source\kapt\debug\com\example\oyun\man
+agers\HighScoreSyncManager_Factory.java, 
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\build\generated\source\kapt\debug\co
+m\example\oyun\managers\SoundManager_Fact
+ory.java, C:\Users\90538\AndroidStudioPro
+jects\oyun\app\build\generated\source\kap
+t\debug\com\example\oyun\notifications\Hi
+lt_QuizFirebaseMessagingService.java, C:\
+Users\90538\AndroidStudioProjects\oyun\ap
+p\build\generated\source\kapt\debug\com\e
+xample\oyun\notifications\QuizFirebaseMes
+sagingService_GeneratedInjector.java, C:\
+Users\90538\AndroidStudioProjects\oyun\ap
+p\build\generated\source\kapt\debug\com\e
+xample\oyun\notifications\QuizFirebaseMes
+sagingService_MembersInjector.java, C:\Us
+ers\90538\AndroidStudioProjects\oyun\app\
+build\generated\source\kapt\debug\com\exa
+mple\oyun\QuizApplication_GeneratedInject
+or.java, C:\Users\90538\AndroidStudioProj
+ects\oyun\app\build\generated\source\kapt
+\debug\com\example\oyun\ui\AuthActivity_G
+eneratedInjector.java, C:\Users\90538\And
+roidStudioProjects\oyun\app\build\generat
+ed\source\kapt\debug\com\example\oyun\ui\
+AuthActivity_MembersInjector.java, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\b
+uild\generated\source\kapt\debug\com\exam
+ple\oyun\ui\category\CategorySelectionAct
+ivity_GeneratedInjector.java, C:\Users\90
+538\AndroidStudioProjects\oyun\app\build\
+generated\source\kapt\debug\com\example\o
+yun\ui\category\CategoryViewModel_Factory
+.java, C:\Users\90538\AndroidStudioProjec
+ts\oyun\app\build\generated\source\kapt\d
+ebug\com\example\oyun\ui\category\Categor
+yViewModel_HiltModules.java, C:\Users\905
+38\AndroidStudioProjects\oyun\app\build\g
+enerated\source\kapt\debug\com\example\oy
+un\ui\category\CategoryViewModel_HiltModu
+les_KeyModule_ProvideFactory.java, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\b
+uild\generated\source\kapt\debug\com\exam
+ple\oyun\ui\category\Hilt_CategorySelecti
+onActivity.java, C:\Users\90538\AndroidSt
+udioProjects\oyun\app\build\generated\sou
+rce\kapt\debug\com\example\oyun\ui\friend
+s\FriendsActivity_GeneratedInjector.java,
+ C:\Users\90538\AndroidStudioProjects\oyu
+n\app\build\generated\source\kapt\debug\c
+om\example\oyun\ui\friends\Hilt_FriendsAc
+tivity.java, C:\Users\90538\AndroidStudio
+Projects\oyun\app\build\generated\source\
+kapt\debug\com\example\oyun\ui\game\GameV
+iewModel_Factory.java, C:\Users\90538\And
+roidStudioProjects\oyun\app\build\generat
+ed\source\kapt\debug\com\example\oyun\ui\
+game\GameViewModel_HiltModules.java, C:\U
+sers\90538\AndroidStudioProjects\oyun\app
+\build\generated\source\kapt\debug\com\ex
+ample\oyun\ui\game\GameViewModel_HiltModu
+les_KeyModule_ProvideFactory.java, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\b
+uild\generated\source\kapt\debug\com\exam
+ple\oyun\ui\GameActivity_GeneratedInjecto
+r.java, C:\Users\90538\AndroidStudioProje
+cts\oyun\app\build\generated\source\kapt\
+debug\com\example\oyun\ui\GameActivity_Me
+mbersInjector.java, C:\Users\90538\Androi
+dStudioProjects\oyun\app\build\generated\
+source\kapt\debug\com\example\oyun\ui\Gam
+eOverActivity_GeneratedInjector.java, C:\
+Users\90538\AndroidStudioProjects\oyun\ap
+p\build\generated\source\kapt\debug\com\e
+xample\oyun\ui\GameOverActivity_MembersIn
+jector.java, C:\Users\90538\AndroidStudio
+Projects\oyun\app\build\generated\source\
+kapt\debug\com\example\oyun\ui\HighScoreA
+ctivity_GeneratedInjector.java, C:\Users\
+90538\AndroidStudioProjects\oyun\app\buil
+d\generated\source\kapt\debug\com\example
+\oyun\ui\HighScoreActivity_MembersInjecto
+r.java, C:\Users\90538\AndroidStudioProje
+cts\oyun\app\build\generated\source\kapt\
+debug\com\example\oyun\ui\Hilt_AuthActivi
+ty.java, C:\Users\90538\AndroidStudioProj
+ects\oyun\app\build\generated\source\kapt
+\debug\com\example\oyun\ui\Hilt_GameActiv
+ity.java, C:\Users\90538\AndroidStudioPro
+jects\oyun\app\build\generated\source\kap
+t\debug\com\example\oyun\ui\Hilt_GameOver
+Activity.java, C:\Users\90538\AndroidStud
+ioProjects\oyun\app\build\generated\sourc
+e\kapt\debug\com\example\oyun\ui\Hilt_Hig
+hScoreActivity.java, C:\Users\90538\Andro
+idStudioProjects\oyun\app\build\generated
+\source\kapt\debug\com\example\oyun\ui\Hi
+lt_JokerModeActivity.java, C:\Users\90538
+\AndroidStudioProjects\oyun\app\build\gen
+erated\source\kapt\debug\com\example\oyun
+\ui\Hilt_JokerRewardActivity.java, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\b
+uild\generated\source\kapt\debug\com\exam
+ple\oyun\ui\Hilt_LevelSelectionActivity.j
+ava, C:\Users\90538\AndroidStudioProjects
+\oyun\app\build\generated\source\kapt\deb
+ug\com\example\oyun\ui\Hilt_MainActivity.
+java, C:\Users\90538\AndroidStudioProject
+s\oyun\app\build\generated\source\kapt\de
+bug\com\example\oyun\ui\Hilt_MultiplayerM
+enuActivity.java, C:\Users\90538\AndroidS
+tudioProjects\oyun\app\build\generated\so
+urce\kapt\debug\com\example\oyun\ui\Hilt_
+ProfileSelectionActivity.java, C:\Users\9
+0538\AndroidStudioProjects\oyun\app\build
+\generated\source\kapt\debug\com\example\
+oyun\ui\JokerModeActivity_GeneratedInject
+or.java, C:\Users\90538\AndroidStudioProj
+ects\oyun\app\build\generated\source\kapt
+\debug\com\example\oyun\ui\JokerModeActiv
+ity_MembersInjector.java, C:\Users\90538\
+AndroidStudioProjects\oyun\app\build\gene
+rated\source\kapt\debug\com\example\oyun\
+ui\JokerRewardActivity_GeneratedInjector.
+java, C:\Users\90538\AndroidStudioProject
+s\oyun\app\build\generated\source\kapt\de
+bug\com\example\oyun\ui\JokerRewardActivi
+ty_MembersInjector.java, C:\Users\90538\A
+ndroidStudioProjects\oyun\app\build\gener
+ated\source\kapt\debug\com\example\oyun\u
+i\LevelSelectionActivity_GeneratedInjecto
+r.java, C:\Users\90538\AndroidStudioProje
+cts\oyun\app\build\generated\source\kapt\
+debug\com\example\oyun\ui\LevelSelectionA
+ctivity_MembersInjector.java, C:\Users\90
+538\AndroidStudioProjects\oyun\app\build\
+generated\source\kapt\debug\com\example\o
+yun\ui\MainActivity_GeneratedInjector.jav
+a, C:\Users\90538\AndroidStudioProjects\o
+yun\app\build\generated\source\kapt\debug
+\com\example\oyun\ui\MainActivity_Members
+Injector.java, C:\Users\90538\AndroidStud
+ioProjects\oyun\app\build\generated\sourc
+e\kapt\debug\com\example\oyun\ui\Multipla
+yerMenuActivity_GeneratedInjector.java, C
+:\Users\90538\AndroidStudioProjects\oyun\
+app\build\generated\source\kapt\debug\com
+\example\oyun\ui\onboarding\Hilt_Tutorial
+Activity.java, C:\Users\90538\AndroidStud
+ioProjects\oyun\app\build\generated\sourc
+e\kapt\debug\com\example\oyun\ui\onboardi
+ng\TutorialActivity_GeneratedInjector.jav
+a, C:\Users\90538\AndroidStudioProjects\o
+yun\app\build\generated\source\kapt\debug
+\com\example\oyun\ui\onboarding\TutorialA
+ctivity_MembersInjector.java, C:\Users\90
+538\AndroidStudioProjects\oyun\app\build\
+generated\source\kapt\debug\com\example\o
+yun\ui\ProfileSelectionActivity_Generated
+Injector.java, C:\Users\90538\AndroidStud
+ioProjects\oyun\app\build\generated\sourc
+e\kapt\debug\com\example\oyun\ui\ProfileS
+electionActivity_MembersInjector.java, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\build\generated\source\kapt\debug\dagg
+er\hilt\internal\aggregatedroot\codegen\_
+com_example_oyun_QuizApplication.java, C:
+\Users\90538\AndroidStudioProjects\oyun\a
+pp\build\generated\source\kapt\debug\hilt
+_aggregated_deps\_com_example_oyun_di_App
+Module.java, C:\Users\90538\AndroidStudio
+Projects\oyun\app\build\generated\source\
+kapt\debug\hilt_aggregated_deps\_com_exam
+ple_oyun_notifications_QuizFirebaseMessag
+ingService_GeneratedInjector.java, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\b
+uild\generated\source\kapt\debug\hilt_agg
+regated_deps\_com_example_oyun_QuizApplic
+ation_GeneratedInjector.java, C:\Users\90
+538\AndroidStudioProjects\oyun\app\build\
+generated\source\kapt\debug\hilt_aggregat
+ed_deps\_com_example_oyun_ui_AuthActivity
+_GeneratedInjector.java, C:\Users\90538\A
+ndroidStudioProjects\oyun\app\build\gener
+ated\source\kapt\debug\hilt_aggregated_de
+ps\_com_example_oyun_ui_category_Category
+SelectionActivity_GeneratedInjector.java,
+ C:\Users\90538\AndroidStudioProjects\oyu
+n\app\build\generated\source\kapt\debug\h
+ilt_aggregated_deps\_com_example_oyun_ui_
+category_CategoryViewModel_HiltModules_Bi
+ndsModule.java, C:\Users\90538\AndroidStu
+dioProjects\oyun\app\build\generated\sour
+ce\kapt\debug\hilt_aggregated_deps\_com_e
+xample_oyun_ui_category_CategoryViewModel
+_HiltModules_KeyModule.java, C:\Users\905
+38\AndroidStudioProjects\oyun\app\build\g
+enerated\source\kapt\debug\hilt_aggregate
+d_deps\_com_example_oyun_ui_friends_Frien
+dsActivity_GeneratedInjector.java, C:\Use
+rs\90538\AndroidStudioProjects\oyun\app\b
+uild\generated\source\kapt\debug\hilt_agg
+regated_deps\_com_example_oyun_ui_GameAct
+ivity_GeneratedInjector.java, C:\Users\90
+538\AndroidStudioProjects\oyun\app\build\
+generated\source\kapt\debug\hilt_aggregat
+ed_deps\_com_example_oyun_ui_GameOverActi
+vity_GeneratedInjector.java, C:\Users\905
+38\AndroidStudioProjects\oyun\app\build\g
+enerated\source\kapt\debug\hilt_aggregate
+d_deps\_com_example_oyun_ui_game_GameView
+Model_HiltModules_BindsModule.java, C:\Us
+ers\90538\AndroidStudioProjects\oyun\app\
+build\generated\source\kapt\debug\hilt_ag
+gregated_deps\_com_example_oyun_ui_game_G
+ameViewModel_HiltModules_KeyModule.java, 
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\build\generated\source\kapt\debug\hi
+lt_aggregated_deps\_com_example_oyun_ui_H
+ighScoreActivity_GeneratedInjector.java, 
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\build\generated\source\kapt\debug\hi
+lt_aggregated_deps\_com_example_oyun_ui_J
+okerModeActivity_GeneratedInjector.java, 
+C:\Users\90538\AndroidStudioProjects\oyun
+\app\build\generated\source\kapt\debug\hi
+lt_aggregated_deps\_com_example_oyun_ui_J
+okerRewardActivity_GeneratedInjector.java
+, C:\Users\90538\AndroidStudioProjects\oy
+un\app\build\generated\source\kapt\debug\
+hilt_aggregated_deps\_com_example_oyun_ui
+_LevelSelectionActivity_GeneratedInjector
+.java, C:\Users\90538\AndroidStudioProjec
+ts\oyun\app\build\generated\source\kapt\d
+ebug\hilt_aggregated_deps\_com_example_oy
+un_ui_MainActivity_GeneratedInjector.java
+, C:\Users\90538\AndroidStudioProjects\oy
+un\app\build\generated\source\kapt\debug\
+hilt_aggregated_deps\_com_example_oyun_ui
+_MultiplayerMenuActivity_GeneratedInjecto
+r.java, C:\Users\90538\AndroidStudioProje
+cts\oyun\app\build\generated\source\kapt\
+debug\hilt_aggregated_deps\_com_example_o
+yun_ui_onboarding_TutorialActivity_Genera
+tedInjector.java, C:\Users\90538\AndroidS
+tudioProjects\oyun\app\build\generated\so
+urce\kapt\debug\hilt_aggregated_deps\_com
+_example_oyun_ui_ProfileSelectionActivity
+_GeneratedInjector.java
+  Script source files: 
+  Script file extensions: 
+  Using Kotlin/JVM incremental compilatio
+n
+  [KOTLIN] Kotlin compilation 'jdkHome' a
+rgument: null
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+191:71 Unresolved reference: level
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+218:47 Unresolved reference: level
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+236:27 Unresolved reference: id
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+241:35 Type mismatch: inferred type is Un
+it but Comparable<TypeVariable(R)> was ex
+pected
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+241:35 Type mismatch: inferred type is Un
+it but Comparable<Unit> was expected
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+241:40 Unresolved reference: id
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+255:43 Unresolved reference. None of the 
+following candidates is applicable becaus
+e of receiver type mismatch: 
+  public val Char.category: CharCategory 
+defined in kotlin.text
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+294:36 Unresolved reference: level
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+365:12 Redeclaration: Question
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+383:9 Cannot find a parameter with this n
+ame: id
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+385:9 Cannot find a parameter with this n
+ame: optionA
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+386:9 Cannot find a parameter with this n
+ame: optionB
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+387:9 Cannot find a parameter with this n
+ame: optionC
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+388:9 Cannot find a parameter with this n
+ame: optionD
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+389:9 Cannot find a parameter with this n
+ame: correctAnswer
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+390:9 Cannot find a parameter with this n
+ame: imageName
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+391:9 Cannot find a parameter with this n
+ame: level
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+392:9 Cannot find a parameter with this n
+ame: category
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+392:9 No value passed for parameter 'opti
+ons'
+> e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/data/HybridQuestionRepository.kt:
+392:9 No value passed for parameter 'corr
+ectAnswerIndex'
+  e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/ui/category/CategoryViewModel.kt:
+49:55 Unresolved reference. None of the f
+ollowing candidates is applicable because
+ of receiver type mismatch: 
+  public val Char.category: CharCategory 
+defined in kotlin.text
+  e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/ui/category/CategoryViewModel.kt:
+52:40 Type mismatch: inferred type is Map
+<Unit, Int> but Map<String, Int> was expe
+cted
+  e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/ui/category/CategoryViewModel.kt:
+62:41 Type inference failed. The value of
+ the type parameter K should be mentioned
+ in input types (argument types, receiver
+ type or expected type). Try to specify i
+t explicitly.
+  e: file:///C:/Users/90538/AndroidStudio
+Projects/oyun/app/src/main/java/com/examp
+le/oyun/ui/category/CategoryViewModel.kt:
+70:41 Type inference failed. The value of
+ the type parameter K should be mentioned
+ in input types (argument types, receiver
+ type or expected type). Try to specify i
+t explicitly.
+
+

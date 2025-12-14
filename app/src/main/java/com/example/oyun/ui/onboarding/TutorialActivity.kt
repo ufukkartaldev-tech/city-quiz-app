@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.oyun.R
-import com.example.oyun.databinding.ActivityTutorialBinding
+import com.example.oyun.databinding.ActivityOnboardingBinding
 import com.example.oyun.ui.MainActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,7 +25,7 @@ class TutorialActivity : AppCompatActivity() {
     @Inject
     lateinit var prefs: SharedPreferences
     
-    private lateinit var binding: ActivityTutorialBinding
+    private lateinit var binding: ActivityOnboardingBinding
     private lateinit var adapter: TutorialPagerAdapter
 
     private val tutorialPages = listOf(
@@ -53,23 +53,23 @@ class TutorialActivity : AppCompatActivity() {
         TutorialPage(
             title = "Arkadaşlarınla Yarış 👥",
             description = "Multiplayer modda arkadaşlarınla gerçek zamanlı yarış!",
-            imageRes = R.drawable.onboarding_multiplayer
+            imageRes = R.drawable.onboarding_welcome
         ),
         TutorialPage(
             title = "Başarımları Topla 🎖️",
             description = "Özel görevleri tamamla, rozetleri kazan!",
-            imageRes = R.drawable.onboarding_achievements
+            imageRes = R.drawable.onboarding_score
         ),
         TutorialPage(
             title = "Hadi Başlayalım! 🚀",
             description = "Her şey hazır! İlk oyununu oynamaya hazır mısın?",
-            imageRes = R.drawable.onboarding_start
+            imageRes = R.drawable.onboarding_welcome
         )
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTutorialBinding.inflate(layoutInflater)
+        binding = ActivityOnboardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupViewPager()
@@ -92,30 +92,30 @@ class TutorialActivity : AppCompatActivity() {
     }
 
     private fun setupButtons() {
-        binding.btnSkip.setOnClickListener {
+        binding.skipButton.setOnClickListener {
             finishTutorial()
         }
 
-        binding.btnNext.setOnClickListener {
+        binding.nextButton.setOnClickListener {
             val currentItem = binding.viewPager.currentItem
             if (currentItem < tutorialPages.size - 1) {
-                binding.viewPager.currentItem = currentItem + 1
+                binding.viewPager.setCurrentItem(currentItem + 1, true)
             } else {
                 finishTutorial()
             }
         }
 
-        binding.btnBack.setOnClickListener {
+        binding.backButton.setOnClickListener {
             val currentItem = binding.viewPager.currentItem
             if (currentItem > 0) {
-                binding.viewPager.currentItem = currentItem - 1
+                binding.viewPager.setCurrentItem(currentItem - 1, true)
             }
         }
     }
 
     private fun updateButtons(position: Int) {
         // İlk sayfada "Geri" butonu gizli
-        binding.btnBack.visibility = if (position == 0) {
+        binding.backButton.visibility = if (position == 0) {
             android.view.View.INVISIBLE
         } else {
             android.view.View.VISIBLE
@@ -123,11 +123,11 @@ class TutorialActivity : AppCompatActivity() {
 
         // Son sayfada "İleri" butonu "Başla" olsun
         if (position == tutorialPages.size - 1) {
-            binding.btnNext.text = "Başla"
-            binding.btnSkip.visibility = android.view.View.INVISIBLE
+            binding.nextButton.text = "Başla"
+            binding.skipButton.visibility = android.view.View.INVISIBLE
         } else {
-            binding.btnNext.text = "İleri"
-            binding.btnSkip.visibility = android.view.View.VISIBLE
+            binding.nextButton.text = "İleri"
+            binding.skipButton.visibility = android.view.View.VISIBLE
         }
     }
 

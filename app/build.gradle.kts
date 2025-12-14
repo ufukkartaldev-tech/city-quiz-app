@@ -72,6 +72,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -112,6 +113,7 @@ dependencies {
     // 🔥 GOOGLE GİRİŞİ İÇİN YENİ EKLENEN KISIMLAR
     implementation("com.google.firebase:firebase-auth-ktx") // 1. Firebase Auth
     implementation("com.google.android.gms:play-services-auth:21.0.0") // 2. Google Girişi
+    implementation("com.google.firebase:firebase-messaging-ktx") // 3. Firebase Cloud Messaging
 
     // 📱 ADMOB REKLAMLARI İÇİN
     implementation("com.google.android.gms:play-services-ads:22.6.0")
