@@ -17,15 +17,25 @@ class AdManager @Inject constructor(
 ) {
 
     companion object {
-        // ✅ GERÇEK REKLAM ID'LERİ (AKTİF)
-        private const val BANNER_AD_UNIT_ID = "ca-app-pub-1334433458655438/1398319482"
-        private const val INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-1334433458655438/7748121326"
-        private const val REWARDED_AD_UNIT_ID = "ca-app-pub-1334433458655438/6975640297"
+        // Test ID'leri (Google'ın sunduğu standart test ID'leri)
+        private const val TEST_BANNER_ID = "ca-app-pub-3940256099942544/6300978111"
+        private const val TEST_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712"
+        private const val TEST_REWARDED_ID = "ca-app-pub-3940256099942544/5224354917"
 
-        // ⚠️ TEST ID'LERİ (YORUM SATIRINDA)
-        // private const val BANNER_AD_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
-        // private const val INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
-        // private const val REWARDED_AD_UNIT_ID = "ca-app-pub-3940256099942544/5224354917"
+        // Gerçek ID'ler
+        private const val PROD_BANNER_ID = "ca-app-pub-1334433458655438/1398319482"
+        private const val PROD_INTERSTITIAL_ID = "ca-app-pub-1334433458655438/7748121326"
+        private const val PROD_REWARDED_ID = "ca-app-pub-1334433458655438/6975640297"
+
+        // Build tipine göre otomatik seçim
+        val BANNER_AD_UNIT_ID: String
+            get() = if (com.example.oyun.BuildConfig.DEBUG) TEST_BANNER_ID else PROD_BANNER_ID
+
+        val INTERSTITIAL_AD_UNIT_ID: String
+            get() = if (com.example.oyun.BuildConfig.DEBUG) TEST_INTERSTITIAL_ID else PROD_INTERSTITIAL_ID
+
+        val REWARDED_AD_UNIT_ID: String
+            get() = if (com.example.oyun.BuildConfig.DEBUG) TEST_REWARDED_ID else PROD_REWARDED_ID
     }
 
     private var interstitialAd: InterstitialAd? = null

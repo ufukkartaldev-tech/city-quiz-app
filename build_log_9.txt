@@ -1,0 +1,204 @@
+> Task :app:buildKotlinToolingMetadata UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsRelease UP-TO-DATE
+> Task :app:generateReleaseResValues UP-TO-DATE
+> Task :app:generateReleaseResources
+> Task :app:injectCrashlyticsMappingFileIdRelease UP-TO-DATE
+> Task :app:processReleaseGoogleServices UP-TO-DATE
+> Task :app:packageReleaseResources
+> Task :app:mergeReleaseResources
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :app:processReleaseMainManifest UP-TO-DATE
+> Task :app:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseManifestForPackage UP-TO-DATE
+> Task :app:parseReleaseLocalResources
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :app:mergeReleaseNativeLibs NO-SOURCE
+> Task :app:stripReleaseDebugSymbols NO-SOURCE
+> Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :app:desugarReleaseFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexRelease UP-TO-DATE
+> Task :app:mergeReleaseArtProfile UP-TO-DATE
+> Task :app:mergeReleaseShaders UP-TO-DATE
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets UP-TO-DATE
+> Task :app:compressReleaseAssets UP-TO-DATE
+> Task :app:extractReleaseVersionControlInfo UP-TO-DATE
+> Task :app:collectReleaseDependencies UP-TO-DATE
+> Task :app:sdkReleaseDependencyData UP-TO-DATE
+> Task :app:validateSigningRelease UP-TO-DATE
+> Task :app:writeReleaseAppMetadata UP-TO-DATE
+> Task :app:writeReleaseSigningConfigVersions UP-TO-DATE
+> Task :app:processReleaseResources
+> Task :app:optimizeReleaseResources
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:kaptReleaseKotlin
+> Task :app:compileReleaseKotlin
+> Task :app:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :app:hiltAggregateDepsRelease UP-TO-DATE
+> Task :app:hiltJavaCompileRelease UP-TO-DATE
+> Task :app:generateReleaseLintVitalReportModel
+> Task :app:processReleaseJavaRes UP-TO-DATE
+> Task :app:mergeReleaseJavaResource UP-TO-DATE
+> Task :app:transformReleaseClassesWithAsm
+> Task :app:dexBuilderRelease
+> Task :app:mergeReleaseGlobalSynthetics UP-TO-DATE
+> Task :app:mergeDexRelease
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect UP-TO-DATE
+> Task :app:lintVitalReportRelease
+
+> Task :app:lintVitalRelease FAILED
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:43: Error: The color "md_theme_dark_secondary" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_secondary">#BC13FE</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:44: Error: The color "md_theme_dark_onSecondary" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onSecondary">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:45: Error: The color "md_theme_dark_secondaryContainer" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_secondaryContainer">#4A148C</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:46: Error: The color "md_theme_dark_onSecondaryContainer" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onSecondaryContainer">#F3E5F5</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:47: Error: The color "md_theme_dark_tertiary" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_tertiary">#FF2E93</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:48: Error: The color "md_theme_dark_onTertiary" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onTertiary">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:49: Error: The color "md_theme_dark_tertiaryContainer" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_tertiaryContainer">#880E4F</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:50: Error: The color "md_theme_dark_onTertiaryContainer" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onTertiaryContainer">#FCE4EC</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:51: Error: The color "md_theme_dark_error" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_error">#FF1744</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:52: Error: The color "md_theme_dark_onError" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onError">#000000</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:53: Error: The color "md_theme_dark_errorContainer" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_errorContainer">#B71C1C</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:54: Error: The color "md_theme_dark_onErrorContainer" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onErrorContainer">#FFEBEE</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:55: Error: The color "md_theme_dark_background" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_background">#0B0E14</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:56: Error: The color "md_theme_dark_onBackground" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onBackground">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:57: Error: The color "md_theme_dark_surface" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_surface">#121212</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:58: Error: The color "md_theme_dark_onSurface" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onSurface">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:59: Error: The color "md_theme_dark_surfaceVariant" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_surfaceVariant">#26FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:60: Error: The color "md_theme_dark_onSurfaceVariant" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_onSurfaceVariant">#B0B3B8</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:61: Error: The color "md_theme_dark_outline" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_outline">#33FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:62: Error: The color "md_theme_dark_inverseOnSurface" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_inverseOnSurface">#151921</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:63: Error: The color "md_theme_dark_inverseSurface" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_inverseSurface">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:64: Error: The color "md_theme_dark_inversePrimary" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_inversePrimary">#0072FF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:65: Error: The color "md_theme_dark_shadow" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+    <color name="md_theme_dark_shadow">#000000</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingDefaultResource":
+   If a resource is only defined in folders with qualifiers like -land or -en,
+   and there is no default declaration in the base folder (layout or values
+   etc), then the app will crash if that resource is accessed on a device
+   where the device is in a configuration missing the given qualifier.
+
+   As a special case, drawables do not have to be specified in the base
+   folder; if there is a match in a density folder (such as drawable-mdpi)
+   that image will be used and scaled. Note however that if you  only specify
+   a drawable in a folder like drawable-en-hdpi, the app will crash in
+   non-English locales.
+
+   There may be scenarios where you have a resource, such as a -fr drawable,
+   which is only referenced from some other resource with the same qualifiers
+   (such as a -fr style), which itself has safe fallbacks. However, this still
+   makes it possible for somebody to accidentally reference the drawable and
+   crash, so it is safer to create a default fallback in the base folder.
+   Alternatively, you can suppress the issue by adding
+   tools:ignore="MissingDefaultResource" on the element.
+
+   (This scenario frequently happens with string translations, where you might
+   delete code and the corresponding resources, but forget to delete a
+   translation. There is a dedicated issue id for that scenario, with the id
+   ExtraTranslation.)
+
+23 errors, 0 warnings
+
+
+[Incubating] Problems report is available at: file:///C:/Users/90538/AndroidStudioProjects/oyun/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintVitalRelease'.
+> Lint found fatal errors while assembling a release target.
+  
+  Fix the issues identified by lint, or create a baseline to see only new errors.
+  To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+  ```
+  android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+  ```
+  For more details, see https://developer.android.com/studio/write/lint#snapshot
+  
+  Lint found 23 errors, 0 warnings. First failure:
+  
+  C:\Users\90538\AndroidStudioProjects\oyun\app\src\main\res\values-night\colors.xml:43: Error: The color "md_theme_dark_secondary" in values-night has no declaration in the base values folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier [MissingDefaultResource]
+      <color name="md_theme_dark_secondary">#BC13FE</color>
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  The full lint text report is located at:
+    C:\Users\90538\AndroidStudioProjects\oyun\app\build\intermediates\lint_vital_intermediate_text_report\release\lintVitalReportRelease\lint-results-release.txt
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1m 53s
+55 actionable tasks: 21 executed, 34 up-to-date

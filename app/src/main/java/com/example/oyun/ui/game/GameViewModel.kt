@@ -22,6 +22,7 @@ data class GameUiState(
     val lives: Int = 3,
     val currentLevel: Int = 1,
     val questionsAnsweredInLevel: Int = 0,
+    val totalQuestionsAnsweredGame: Int = 0, // Oyun boyunca cevaplanan toplam soru sayısı
     val jokerInventory: JokerInventory = JokerInventory(0, 0, 0),
     val isLoading: Boolean = true,
     val isAnswered: Boolean = false // Kullanıcının cevap verip vermediğini tutar
@@ -76,6 +77,7 @@ class GameViewModel @Inject constructor(
         val initialScore = if (isNewGame) 0 else prefs.getInt("profile_${activeUser}_score", 0)
         val initialLives = if (isNewGame) 3 else prefs.getInt("profile_${activeUser}_lives", 3)
         val initialQuestionsAnswered = if (isNewGame) 0 else prefs.getInt("profile_${activeUser}_questions_answered", 0)
+        val initialTotalQuestionsAnsweredGame = if (isNewGame) 0 else prefs.getInt("profile_${activeUser}_total_questions_answered_game", 0)
         
         repository.loadQuestionsForLevel(startLevel)
         correctAnswerStreak = 0
@@ -87,6 +89,7 @@ class GameViewModel @Inject constructor(
                 score = initialScore,
                 lives = initialLives,
                 questionsAnsweredInLevel = initialQuestionsAnswered,
+                totalQuestionsAnsweredGame = initialTotalQuestionsAnsweredGame,
                 jokerInventory = initialJokers,
                 isLoading = false
             )
@@ -105,9 +108,22 @@ class GameViewModel @Inject constructor(
         if (nextQuestion != null) {
             _uiState.update { it.copy(currentQuestion = nextQuestion, isAnswered = false) }
         } else {
-            // Oyun Bitti (Seviye Bitti ama Level Up tetiklenmediyse son)
-            soundManager.playGameOver()
-            _gameOverEvent.value = Event(Unit)
+            // Sorular bitti.
+            // Eğer canımız varsa (veya oyun devam ediyorsa), sonraki seviyeye geçmeyi dene.
+            if (_uiState.value.lives > 0) {
+                val nextLevel = _uiState.value.currentLevel + 1
+                if (repository.hasQuestionsForLevel(nextLevel)) {
+                    performLevelUp(nextLevel)
+                } else {
+                    // Oyun Bitti (Tüm seviyeler tamamlandı)
+                    soundManager.playGameOver()
+                    _gameOverEvent.value = Event(Unit)
+                }
+            } else {
+                // Can kalmadı, Oyun Bitti.
+                soundManager.playGameOver()
+                _gameOverEvent.value = Event(Unit)
+            }
         }
     }
 
@@ -119,6 +135,7 @@ class GameViewModel @Inject constructor(
         var newScore = _uiState.value.score
         var newLives = _uiState.value.lives
         var newQuestionsAnswered = _uiState.value.questionsAnsweredInLevel
+        var newTotalQuestionsAnsweredGame = _uiState.value.totalQuestionsAnsweredGame + 1
 
         if (isCorrect) {
             soundManager.playCorrectAnswer() // ✅ SES
@@ -137,7 +154,8 @@ class GameViewModel @Inject constructor(
             it.copy(
                 score = newScore,
                 lives = newLives,
-                questionsAnsweredInLevel = newQuestionsAnswered
+                questionsAnsweredInLevel = newQuestionsAnswered,
+                totalQuestionsAnsweredGame = newTotalQuestionsAnsweredGame
             )
         }
         
@@ -153,31 +171,35 @@ class GameViewModel @Inject constructor(
 
     private fun checkLevelUp() {
         if (_uiState.value.questionsAnsweredInLevel >= questionsPerLevel) {
-            val newLevel = _uiState.value.currentLevel + 1
-            if (repository.hasQuestionsForLevel(newLevel)) {
-                soundManager.playLevelUp() // 🆙 SES
-                
-                achievementManager.checkLevelCompletedNoJokers(!usedJokersInThisLevel)
-                achievementManager.checkFirstLevel()
-                repository.loadQuestionsForLevel(newLevel)
-                usedJokersInThisLevel = false
-
-                _uiState.update {
-                    it.copy(
-                        currentLevel = newLevel,
-                        questionsAnsweredInLevel = 0
-                    )
-                }
-                
-                prefs.edit().putInt("profile_${activeUser}_current_level", newLevel).apply()
-                saveGameState()
-                
-                _levelUpEvent.value = Event(newLevel)
+            val nextLevel = _uiState.value.currentLevel + 1
+            if (repository.hasQuestionsForLevel(nextLevel)) {
+                performLevelUp(nextLevel)
             } else {
                 soundManager.playGameOver() // 🏁 SES (Oyun tamamen bitti)
                 _gameOverEvent.value = Event(Unit)
             }
         }
+    }
+
+    private fun performLevelUp(newLevel: Int) {
+        soundManager.playLevelUp() // 🆙 SES
+        
+        achievementManager.checkLevelCompletedNoJokers(!usedJokersInThisLevel)
+        achievementManager.checkFirstLevel()
+        repository.loadQuestionsForLevel(newLevel)
+        usedJokersInThisLevel = false
+
+        _uiState.update {
+            it.copy(
+                currentLevel = newLevel,
+                questionsAnsweredInLevel = 0
+            )
+        }
+        
+        prefs.edit().putInt("profile_${activeUser}_current_level", newLevel).apply()
+        saveGameState()
+        
+        _levelUpEvent.value = Event(newLevel)
     }
 
     fun useFiftyFiftyJoker() {
@@ -252,6 +274,7 @@ class GameViewModel @Inject constructor(
             putInt("profile_${activeUser}_score", state.score)
             putInt("profile_${activeUser}_lives", state.lives)
             putInt("profile_${activeUser}_questions_answered", state.questionsAnsweredInLevel)
+            putInt("profile_${activeUser}_total_questions_answered_game", state.totalQuestionsAnsweredGame)
             apply()
         }
     }

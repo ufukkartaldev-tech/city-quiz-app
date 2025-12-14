@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Configuration
+    Enforces HTTPS and secure connections
+-->
 <network-security-config>
+    <!-- Production configuration: HTTPS only -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust system certificates (Google, Firebase, etc.) -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Debug configuration: Allow localhost for testing -->
     <domain-config cleartextTrafficPermitted="true">
+        <!-- Android Emulator localhost -->
         <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- Local development -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
     </domain-config>
+
+    <!-- Firebase & Google Services (HTTPS enforced) -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">firebaseio.com</domain>
+        <domain includeSubdomains="true">googleapis.com</domain>
+        <domain includeSubdomains="true">google.com</domain>
+        <domain includeSubdomains="true">gstatic.com</domain>
+        <domain includeSubdomains="true">googleadservices.com</domain>
+        <domain includeSubdomains="true">doubleclick.net</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+
+    <!-- 
+        Certificate Pinning (Optional - Uncomment for extra security)
+        Note: Update pins before they expire!
+    -->
+    <!--
+    <domain-config>
+        <domain includeSubdomains="true">firebaseio.com</domain>
+        <pin-set expiration="2026-01-01">
+            <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+            <pin digest="SHA-256">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=</pin>
+        </pin-set>
+    </domain-config>
+    -->
 </network-security-config>

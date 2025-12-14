@@ -3,15 +3,13 @@ package com.example.oyun.ui
 import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
-import android.view.LayoutInflater
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.oyun.R
 import com.example.oyun.data.GameRoom
 import com.example.oyun.databinding.ActivityMultiplayerMenuBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
@@ -41,17 +39,50 @@ class MultiplayerMenuActivity : AppCompatActivity() {
 
     private fun setupButtons() {
         binding.createRoomButton.setOnClickListener {
-            showCreateRoomDialog()
+            ensureAuthenticated {
+                showCreateRoomDialog()
+            }
         }
 
         binding.joinRoomButton.setOnClickListener {
-            showJoinRoomDialog()
+            ensureAuthenticated {
+                showJoinRoomDialog()
+            }
+        }
+    }
+
+    private fun ensureAuthenticated(action: () -> Unit) {
+        if (auth.currentUser != null) {
+            action()
+        } else {
+            // Kullanıcı giriş yapmamış (Misafir butonu ile gelmiş olabilir)
+            // Firebase Anonymous Auth ile giriş yapmayı dene
+            val loadingDialog = MaterialAlertDialogBuilder(this)
+                .setTitle("Giriş Yapılıyor")
+                .setMessage("Multiplayer için misafir girişi oluşturuluyor...")
+                .setCancelable(false)
+                .show()
+
+            auth.signInAnonymously()
+                .addOnSuccessListener {
+                    loadingDialog.dismiss()
+                    Toast.makeText(this, "Misafir girişi başarılı", Toast.LENGTH_SHORT).show()
+                    action()
+                }
+                .addOnFailureListener { e ->
+                    loadingDialog.dismiss()
+                    MaterialAlertDialogBuilder(this)
+                        .setTitle("Hata")
+                        .setMessage("Giriş yapılamadı: ${e.message}")
+                        .setPositiveButton("Tamam", null)
+                        .show()
+                }
         }
     }
 
     private fun showCreateRoomDialog() {
         val options = arrayOf("Herkese Açık Oda", "Özel Oda (Arkadaşınla Oyna)")
-        AlertDialog.Builder(this)
+        MaterialAlertDialogBuilder(this)
             .setTitle("Oda Tipi Seç")
             .setItems(options) { _, which ->
                 when (which) {
@@ -64,7 +95,7 @@ class MultiplayerMenuActivity : AppCompatActivity() {
 
     private fun showJoinRoomDialog() {
         val options = arrayOf("Rastgele Katıl", "Kod ile Katıl")
-        AlertDialog.Builder(this)
+        MaterialAlertDialogBuilder(this)
             .setTitle("Nasıl Katılmak İstersin?")
             .setItems(options) { _, which ->
                 when (which) {
@@ -80,7 +111,7 @@ class MultiplayerMenuActivity : AppCompatActivity() {
         input.inputType = InputType.TYPE_CLASS_NUMBER
         input.hint = "6 Haneli Kod"
 
-        AlertDialog.Builder(this)
+        MaterialAlertDialogBuilder(this)
             .setTitle("Oda Kodunu Gir")
             .setView(input)
             .setPositiveButton("Katıl") { _, _ ->
@@ -133,7 +164,7 @@ class MultiplayerMenuActivity : AppCompatActivity() {
             .get()
             .addOnSuccessListener { snapshot ->
                 if (snapshot.isEmpty) {
-                    AlertDialog.Builder(this)
+                    MaterialAlertDialogBuilder(this)
                         .setTitle("Oda Bulunamadı")
                         .setMessage("Şu an bekleyen açık oda yok. Yeni bir oda oluşturmak ister misin?")
                         .setPositiveButton("Oluştur") { _, _ -> createRoom(isPrivate = false) }

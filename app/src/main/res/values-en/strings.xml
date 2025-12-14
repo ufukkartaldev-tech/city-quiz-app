@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">GAME</string>
-    
+
     <!-- Main Menu -->
     <string name="welcome_user">Welcome, %s!</string>
     <string name="watch_ad_title">Watch Ad</string>
@@ -30,4 +30,112 @@
     <string name="return_menu">Return to Menu</string>
     <string name="connection_lost">Connection lost!</string>
     <string name="opponent_left">Opponent left the game.</string>
+
+    <!-- UI Strings -->
+    <string name="welcome_message">Welcome!</string>
+    <string name="game_modes">Game Modes</string>
+    <string name="start_new_game">🎯 New Game</string>
+    <string name="continue_game">▶️ Continue</string>
+    <string name="multiplayer">🎮 Multiplayer</string>
+    <string name="win_joker">Win Joker</string>
+    <string name="watch_ad">Watch Ad</string>
+    <string name="daily_tasks">Daily Tasks</string>
+    <string name="select_level">Select Level</string>
+    <string name="achievements">Achievements</string>
+    <string name="high_scores">High Scores</string>
+    <string name="settings_access_desc">Settings</string>
+    
+    <!-- Settings Strings -->
+    <string name="version_format">Version %s</string>
+    <string name="about_title">About</string>
+    <string name="about_message">🎮 City Quiz Game\n\nThe most fun quiz game!\n\n📱 Features:\n• 10 levels, hundreds of questions\n• Multiplayer competition mode\n• Achievements and daily tasks\n• Joker system\n• Leaderboard\n\n📧 Contact:\nsupport@cityquizapp.com\n\n© 2025 GAME</string>
+    <string name="feedback_subject">GAME - Feedback</string>
+    <string name="email_chooser_title">Send Email</string>
+    <string name="email_not_found">Email app not found</string>
+    <string name="profile_info_title">Profile Info</string>
+    <string name="profile_info_format">👤 Username: %1$s\n📧 Email: %2$s\n🆔 UID: %3$s</string>
+    <string name="sign_out_title">Sign Out</string>
+    <string name="sign_out_message">Are you sure you want to sign out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="feedback">Feedback</string>
+    <string name="login_required">Login required</string>
+    <string name="language_changed">Language changed</string>
+    <string name="language_changed_en">Language changed</string>
+    <string name="sound_on">Sound effects on</string>
+    <string name="sound_off">Sound effects off</string>
+    <string name="music_on">Music on</string>
+    <string name="music_off">Music off</string>
+
+    <!-- Game Over -->
+    <string name="game_over_header">GAME OVER!</string>
+    <string name="total_score">TOTAL SCORE</string>
+    <string name="correct_count">Correct</string>
+    <string name="question_count">Quest.</string>
+    <string name="level_label">Level</string>
+    <string name="try_again">🔄 TRY AGAIN</string>
+    <string name="main_menu">🏠 Main Menu</string>
+    <string name="leaderboard">📊 Leaderboard</string>
+
+    <!-- Settings Additional -->
+    <string name="settings_title">⚙️ Settings</string>
+    <string name="appearance_settings">🎨 Appearance</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_desc">Protects eyes, saves battery</string>
+    <string name="language_selection">Language / Dil</string>
+    <string name="sound_notification_settings">🔊 Sound &amp; Notifications</string>
+    <string name="sound_effects">Sound Effects</string>
+    <string name="music">Music</string>
+    <string name="account_settings">👤 Account</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="app_info">ℹ️ App Info</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Auth Screen -->
+    <string name="app_title">City Quiz Game</string>
+    <string name="app_subtitle">The Most Fun Quiz Game</string>
+    <string name="slogan_1">10 Levels, Hundreds of Questions</string>
+    <string name="slogan_2">Multiplayer Mode</string>
+    <string name="slogan_3">Achievements &amp; Daily Tasks</string>
+    <string name="login_prompt">Join the leaderboard and save progress!</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="divider_or">or</string>
+    <string name="guest_login">Continue as Guest</string>
+
+    <!-- Profile Screen -->
+    <string name="select_profile_title">Select Profile</string>
+    <string name="new_profile_btn">+ NEW PROFILE</string>
+
+    <!-- Multiplayer Menu -->
+    <string name="create_room_btn">🎮 CREATE ROOM</string>
+    <string name="join_room_btn">🚪 JOIN ROOM</string>
+    <string name="active_rooms_title">Active Rooms</string>
+
+    <!-- Joker Mode -->
+    <string name="joker_mode_title">WIN JOKER!</string>
+    <string name="answer_hint">Type your answer</string>
+    <string name="submit_answer">ANSWER</string>
+
+    <!-- Joker Reward -->
+    <string name="joker_won_title">YOU WON A JOKER!</string>
+    <string name="continue_btn">CONTINUE</string>
+
+    <!-- Pause Dialog -->
+    <string name="pause_continue">Continue</string>
+    <string name="pause_restart">Restart</string>
+    <string name="pause_exit">Exit</string>
+
+    <!-- Multiplayer Game -->
+    <string name="player_you">You</string>
+    <string name="player_opponent">Opponent</string>
+    <string name="vs_label">VS</string>
+    <string name="question_progress_format">Question %1$d/%2$d</string>
+
+    <!-- Information Screens -->
+    <string name="high_scores_title">📊 High Scores</string>
+    <string name="achievements_title">🏆 Achievements</string>
+    <string name="daily_tasks_title">📋 Daily Tasks</string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="policy_loading">Loading privacy policy...</string>
 </resources>

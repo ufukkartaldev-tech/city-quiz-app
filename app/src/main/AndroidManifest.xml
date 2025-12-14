@@ -71,6 +71,7 @@
         <activity android:name="com.example.oyun.ui.DailyTasksActivity" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name="com.example.oyun.ui.MultiplayerMenuActivity" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name="com.example.oyun.ui.MultiplayerGameActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name="com.example.oyun.ui.friends.FriendsActivity" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name="com.example.oyun.ui.PrivacyPolicyActivity" android:exported="false" android:screenOrientation="portrait" />
 
     </application>

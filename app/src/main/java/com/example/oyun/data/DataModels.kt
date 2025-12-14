@@ -206,7 +206,8 @@ data class GameRoom(
     val guestFinished: Boolean = false, // Guest tüm soruları bitirdi mi?
     val roomCode: String? = null, // 6 haneli oda kodu
     val lastEmoji: String? = null, // Format: "userId|emoji"
-    val questionSeed: Long = 0L // Soru senkronizasyonu için seed
+    val questionSeed: Long = 0L, // Soru senkronizasyonu için seed
+    val isPrivate: Boolean = false
 )
 
 data class FriendRequest(

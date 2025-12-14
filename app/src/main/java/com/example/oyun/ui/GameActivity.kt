@@ -146,7 +146,7 @@ class GameActivity : AppCompatActivity() {
         val intent = Intent(this, GameOverActivity::class.java).apply {
             putExtra("score", uiState.score)
             putExtra("correct_answers", uiState.score / 10)
-            putExtra("total_questions", uiState.questionsAnsweredInLevel)
+            putExtra("total_questions", uiState.totalQuestionsAnsweredGame)
             putExtra("level", uiState.currentLevel)
             // Joker bilgilerini de gönder
             putExtra("joker_fiftyfifty", uiState.jokerInventory.fiftyFifty)

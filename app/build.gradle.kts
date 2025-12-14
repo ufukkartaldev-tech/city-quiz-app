@@ -1,5 +1,8 @@
 // build.gradle.kts (Module: app)
 
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -18,18 +21,31 @@ android {
         applicationId = "com.example.oyun" // Firebase ile uyumlu ID (Play Store için değiştirin)
         minSdk = 24
         targetSdk = 34
-        versionCode = 2 // Versiyon artırıldı
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    // Load keystore properties from external file for security
+    val keystorePropertiesFile = rootProject.file("keystore.properties")
+    val keystoreProperties = Properties()
+    
+    if (keystorePropertiesFile.exists()) {
+        FileInputStream(keystorePropertiesFile).use { keystoreProperties.load(it) }
+    }
+
     signingConfigs {
         create("release") {
-            storeFile = file("../oyun-release-key.jks")
-            storePassword = "oyun2024"
-            keyAlias = "oyun"
-            keyPassword = "oyun2024"
+            if (keystorePropertiesFile.exists()) {
+                storeFile = file(keystoreProperties.getProperty("storeFile"))
+                storePassword = keystoreProperties.getProperty("storePassword")
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+            } else {
+                // Fallback for CI/CD or when keystore.properties doesn't exist
+                println("WARNING: keystore.properties not found. Using environment variables or defaults.")
+            }
         }
     }
 
@@ -37,6 +53,7 @@ android {
         release {
             signingConfig = signingConfigs.getByName("release")
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

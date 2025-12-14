@@ -361,6 +361,7 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <!-- High Scores Card -->
+                <!-- High Scores Card -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/highScoresCard"
                     android:layout_width="0dp"
@@ -374,6 +375,30 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📊"
+                            android:textSize="32sp"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/highScoresButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/high_scores"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
 
                     </LinearLayout>
 

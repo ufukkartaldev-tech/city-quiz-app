@@ -1,5 +1,6 @@
 package com.example.oyun.di
 
+import android.app.NotificationManager
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.room.Room
@@ -7,12 +8,14 @@ import com.example.oyun.data.AppDatabase
 import com.example.oyun.data.HighScoreDao
 import com.example.oyun.data.remote.AuthRepository
 import com.example.oyun.data.remote.FirebaseSyncService
+import com.example.oyun.data.remote.FriendsRepository
 import com.example.oyun.data.remote.GoogleSignInHelper
 import com.example.oyun.data.remote.HighScoreRemoteRepository
 import com.example.oyun.managers.AdManager
 import com.example.oyun.managers.SoundManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.messaging.FirebaseMessaging
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -107,5 +110,32 @@ object AppModule {
     @Singleton
     fun provideGoogleSignInHelper(): GoogleSignInHelper {
         return GoogleSignInHelper()
+    }
+
+    // ============================================
+    // YENİ EKLENDİ: Arkadaş Sistemi
+    // ============================================
+    @Provides
+    @Singleton
+    fun provideFriendsRepository(
+        firestore: FirebaseFirestore,
+        auth: FirebaseAuth
+    ): FriendsRepository {
+        return FriendsRepository(firestore, auth)
+    }
+
+    // ============================================
+    // YENİ EKLENDİ: Bildirim Sistemi
+    // ============================================
+    @Provides
+    @Singleton
+    fun provideNotificationManager(@ApplicationContext context: Context): NotificationManager {
+        return context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+    }
+
+    @Provides
+    @Singleton
+    fun provideFirebaseMessaging(): FirebaseMessaging {
+        return FirebaseMessaging.getInstance()
     }
 }

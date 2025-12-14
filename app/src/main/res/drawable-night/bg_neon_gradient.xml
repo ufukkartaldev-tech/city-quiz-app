@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Light Gradient Background (Light Mode) -->
+<!-- Neon Gradient Background (Dark Mode) -->
+<!-- Karartılmış Derin Arka Plan -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     
     <gradient
         android:type="linear"
         android:angle="45"
-        android:startColor="#F0F4F8"
-        android:centerColor="#E6EAF0"
-        android:endColor="#D9E2EC" />
+        android:startColor="#050A14"
+        android:centerColor="#120518"
+        android:endColor="#0F040A" />
 </shape>
