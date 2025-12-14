@@ -6,6 +6,8 @@ import android.content.SharedPreferences
 import androidx.room.Room
 import com.example.oyun.data.AppDatabase
 import com.example.oyun.data.HighScoreDao
+import com.example.oyun.data.HybridQuestionRepository
+import com.example.oyun.data.local.CachedQuestionDao
 import com.example.oyun.data.remote.AuthRepository
 import com.example.oyun.data.remote.FirebaseSyncService
 import com.example.oyun.data.remote.FriendsRepository
@@ -22,6 +24,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
+
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -59,10 +62,10 @@ object AppModule {
             AppDatabase::class.java,
             "quiz_db"
         )
-            // Migration strategy ekle (gelecek güncellemeler için)
-            // .addMigrations(*AppDatabase.getAllMigrations())
-            // Geliştirme sırasında fallback kullan (production'da kaldır!)
-            .fallbackToDestructiveMigration()
+            // Migration strategy ekle
+            .addMigrations(*AppDatabase.getAllMigrations())
+            // Production'da fallback kullanma!
+            // .fallbackToDestructiveMigration()  // Sadece development için
             .build()
     }
 
@@ -71,6 +74,24 @@ object AppModule {
     fun provideHighScoreDao(db: AppDatabase): HighScoreDao {
         return db.highScoreDao()
     }
+
+    @Provides
+    @Singleton
+    fun provideCachedQuestionDao(db: AppDatabase): CachedQuestionDao {
+        return db.cachedQuestionDao()
+    }
+
+    @Provides
+    @Singleton
+    fun provideHybridQuestionRepository(
+        @ApplicationContext context: Context,
+        cachedQuestionDao: CachedQuestionDao,
+        firestore: FirebaseFirestore,
+        gson: Gson
+    ): HybridQuestionRepository {
+        return HybridQuestionRepository(context, cachedQuestionDao, firestore, gson)
+    }
+
 
     @Provides
     @Singleton
