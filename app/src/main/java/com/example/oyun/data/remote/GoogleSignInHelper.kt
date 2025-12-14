@@ -22,8 +22,17 @@ class GoogleSignInHelper @Inject constructor() {
 
     fun getSignInIntent(activity: Activity): Intent? {
         if (googleSignInClient == null) {
+            // Get Web Client ID from google-services.json
+            val webClientId = try {
+                activity.getString(com.example.oyun.R.string.default_web_client_id)
+            } catch (e: Exception) {
+                // Fallback to hardcoded (NOT RECOMMENDED for production)
+                android.util.Log.e("GoogleSignInHelper", "Failed to get web client ID from resources", e)
+                "736807627314-fvf2irai5bh9k92obl5the9cp2vds98c.apps.googleusercontent.com"
+            }
+            
             val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("736807627314-fvf2irai5bh9k92obl5the9cp2vds98c.apps.googleusercontent.com")
+                .requestIdToken(webClientId)
                 .requestEmail()
                 .build()
 
