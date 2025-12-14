@@ -31,6 +31,20 @@ api_keys.xml
 secrets.xml
 **/secrets.properties
 
+# Firebase Service Account (ASLA GİT'E EKLEMEYİN!)
+serviceAccountKey.json
+**/serviceAccountKey.json
+
+# AI API Keys (Environment variables kullanın!)
+.env
+.env.local
+
+# Oluşturulan soru dosyaları (büyük olabilir)
+questions_extended.json
+firestore_import.json
+ai_questions_*.json
+
+
 # ============================================
 # ANDROID BUILD OUTPUTS
 # ============================================
