@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardCategory"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:rippleColor="@android:color/white"
+    app:strokeWidth="0dp">
+
+    <!-- Gradient Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_overlay"
+        android:alpha="0.3" />
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- İkon (Emoji) -->
+        <TextView
+            android:id="@+id/tvCategoryIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:layout_marginBottom="12dp"
+            tools:text="🌍" />
+
+        <!-- Kategori Adı -->
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"
+            tools:text="Coğrafya" />
+
+        <!-- Açıklama -->
+        <TextView
+            android:id="@+id/tvCategoryDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginBottom="8dp"
+            tools:text="Şehirler, göller, nehirler" />
+
+        <!-- Soru Sayısı / Kilit -->
+        <TextView
+            android:id="@+id/tvQuestionCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_rounded_badge"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            tools:text="50 soru" />
+
+    </LinearLayout>
+
+    <!-- Kilit İkonu (Overlay) -->
+    <ImageView
+        android:id="@+id/ivLock"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_lock"
+        android:tint="@android:color/white"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</com.google.android.material.card.MaterialCardView>
